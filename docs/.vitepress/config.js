@@ -11,11 +11,11 @@ const Docs = [
 const Versions = [
   {
     text: '0.6.0',
-    link: '/versions/0.6.0'
+    link: '/docs/versions/0.6.0.md'
   },
   {
     text: '0.6.1',
-    link: '/versions/0.6.1'
+    link: '/docs/versions/0.6.1.md'
   }
 ]
 
@@ -83,9 +83,7 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/versions/': slidebars,
-      '/docs/': slidebars,
-      '/': slidebars
+      '/docs/': slidebars
     }
   }
 }
