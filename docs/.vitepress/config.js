@@ -8,10 +8,25 @@ const Docs = [
   }
 ]
 
+const Versions = [
+  {
+    text: '0.6.0',
+    link: '/versions/0.6.0'
+  },
+  {
+    text: '0.6.1',
+    link: '/versions/0.6.1'
+  }
+]
+
 const slidebars = [
   {
     text: 'Docs',
     children: Docs
+  },
+  {
+    text: 'Versions',
+    children: Versions
   }
 ]
 
@@ -51,19 +66,24 @@ module.exports = {
     ]
   ],
   themeConfig: {
-    repo: 'seonglae/windipress',
-    logo: '/logo.svg',
+    repo: 'seonglae/intuiter-docs',
+    logo: '/logo.png',
     docsDir: 'docs',
     docsBranch: 'release',
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
     nav: [
       {
-        text: 'Doc',
+        text: 'Docs',
         items: Docs
+      },
+      {
+        text: 'Versions',
+        items: Versions
       }
     ],
     sidebar: {
+      '/versions/': slidebars,
       '/docs/': slidebars,
       '/': slidebars
     }
