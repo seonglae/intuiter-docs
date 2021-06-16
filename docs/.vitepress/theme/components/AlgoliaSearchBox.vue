@@ -66,8 +66,6 @@ function initialize(userOptions: any) {
             window.location.origin + suggestionUrl,
           )
 
-          // Router doesn't handle same-page navigation so we use the native
-          // browser location API for anchor navigation
           if (route.path === hitPathname)
             window.location.assign(window.location.origin + suggestionUrl)
 

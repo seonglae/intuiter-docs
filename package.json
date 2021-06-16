@@ -1,9 +1,9 @@
 {
-  "name": "windipress",
-  "displayName": "WindiPress",
-  "description": "Vitepress WindiCSS Template",
-  "homepage": "https://vitepress-template.vercel.app",
-  "version": "0.1.0",
+  "name": "intuiter-docs",
+  "displayName": "Intuiter",
+  "description": "Intuti Manager",
+  "homepage": "https://intuiter.vercel.app",
+  "version": "1.0.0",
   "engines": {
     "node": ">=14.0.0"
   },
