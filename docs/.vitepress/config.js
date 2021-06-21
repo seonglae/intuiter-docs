@@ -5,7 +5,7 @@ const Docs = [
   {
     text: 'Getting Started',
     link: '/docs/'
-  }
+  },
 ]
 
 const Versions = [
