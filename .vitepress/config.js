@@ -1,33 +1,33 @@
 // @ts-check
-const pkg = require('../../package.json')
+const pkg = require('../package.json')
 
 const Docs = [
   {
     text: 'Getting Started',
-    link: '/docs/'
+    link: '/docs/',
   },
 ]
 
 const Versions = [
   {
     text: '0.6.0',
-    link: '/docs/versions/0.6.0.md'
+    link: '/versions/0-6-0',
   },
   {
     text: '0.6.1',
-    link: '/docs/versions/0.6.1.md'
-  }
+    link: '/versions/0-6-1',
+  },
 ]
 
 const slidebars = [
   {
     text: 'Docs',
-    children: Docs
+    children: Docs,
   },
   {
     text: 'Versions',
-    children: Versions
-  }
+    children: Versions,
+  },
 ]
 
 /**
@@ -44,26 +44,23 @@ module.exports = {
     ['meta', { property: 'og:description', content: pkg.description }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:creator', content: '@SeonglaeC' }],
-    [
-      'meta',
-      { name: 'twitter:image', content: `${pkg.homepage}/og-image.png` }
-    ],
+    ['meta', { name: 'twitter:image', content: `${pkg.homepage}/og-image.png` }],
     ['link', { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' }],
     [
       'link',
       {
         rel: 'preconnect',
         crossorigin: 'anonymous',
-        href: 'https://fonts.gstatic.com'
-      }
+        href: 'https://fonts.gstatic.com',
+      },
     ],
     [
       'link',
       {
         href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;500&family=Inter:wght@200;400;500;600',
-        rel: 'stylesheet'
-      }
-    ]
+        rel: 'stylesheet',
+      },
+    ],
   ],
   themeConfig: {
     repo: 'seonglae/intuiter-docs',
@@ -75,15 +72,13 @@ module.exports = {
     nav: [
       {
         text: 'Docs',
-        items: Docs
+        items: Docs,
       },
       {
         text: 'Versions',
-        items: Versions
-      }
+        items: Versions,
+      },
     ],
-    sidebar: {
-      '/docs/': slidebars
-    }
-  }
+    sidebar: slidebars,
+  },
 }
