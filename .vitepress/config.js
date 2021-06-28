@@ -3,8 +3,35 @@ const pkg = require('../package.json')
 
 const Docs = [
   {
-    text: 'Getting Started',
+    text: 'Intuiter',
     link: '/docs/',
+  },
+  {
+    text: 'Install',
+    link: '/docs/install',
+  },
+  {
+    text: 'Usage',
+    link: '/docs/usage',
+  },
+]
+
+const Usages = [
+  {
+    text: 'Text',
+    link: '/usages/text',
+  },
+  {
+    text: 'Mouse',
+    link: '/usages/mouse',
+  },
+  {
+    text: 'Shortcut',
+    link: '/usages/shortcut',
+  },
+  {
+    text: 'Others',
+    link: '/usages/others',
   },
 ]
 
@@ -25,8 +52,8 @@ const slidebars = [
     children: Docs,
   },
   {
-    text: 'Versions',
-    children: Versions,
+    text: 'Usage',
+    children: Usages,
   },
 ]
 
@@ -37,7 +64,7 @@ module.exports = {
   title: pkg.displayName,
   description: pkg.description,
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
     ['meta', { name: 'author', content: 'Seonglae Cho' }],
     ['meta', { property: 'og:title', content: 'Vitepress' }],
     ['meta', { property: 'og:image', content: `${pkg.homepage}/og-image.png` }],
@@ -65,18 +92,17 @@ module.exports = {
   themeConfig: {
     repo: 'seonglae/intuiter-docs',
     logo: '/logo.png',
-    docsDir: 'docs',
     docsBranch: 'release',
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
     nav: [
       {
-        text: 'Docs',
-        items: Docs,
-      },
-      {
         text: 'Versions',
         items: Versions,
+      },
+      {
+        text: 'Usages',
+        items: Usages,
       },
     ],
     sidebar: slidebars,
