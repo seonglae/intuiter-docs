@@ -33,29 +33,41 @@ export const SideBarLink: FunctionalComponent<{
         class: { 'sidebar-link-item': true, active },
         href: link,
       },
-      text
+      text,
     ),
     childItems,
   ])
 }
 
 function resolveLink(base: string, path?: string): string | undefined {
-  if (path === undefined) return path
+  if (path === undefined)
+    return path
 
   // keep relative hash to the same page
-  if (path.startsWith('#')) return path
+  if (path.startsWith('#'))
+    return path
 
   return joinUrl(base, path)
 }
 
-function createChildren(active: boolean, children?: DefaultTheme.SideBarItem[], headers?: Header[]): VNode | null {
-  if (children && children.length > 0)
-    h(
+function createChildren(
+  active: boolean,
+  children?: DefaultTheme.SideBarItem[],
+  headers?: Header[],
+): VNode | null {
+  if (children && children.length > 0) {
+    return h(
       'ul',
       { class: 'sidebar-links' },
-      children.map(c => h(SideBarLink, { item: c }))
+      children.map((c) => {
+        return h(SideBarLink, { item: c })
+      }),
     )
-  return active && headers ? createChildren(false, resolveHeaders(headers)) : null
+  }
+
+  return active && headers
+    ? createChildren(false, resolveHeaders(headers))
+    : null
 }
 
 function resolveHeaders(headers: Header[]): DefaultTheme.SideBarItem[] {
@@ -65,9 +77,12 @@ function resolveHeaders(headers: Header[]): DefaultTheme.SideBarItem[] {
 function groupHeaders(headers: Header[]): HeaderWithChildren[] {
   headers = headers.map(h => Object.assign({}, h))
   let lastH2: HeaderWithChildren
-  headers.forEach(h => {
-    if (h.level === 2) lastH2 = h
-    else if (lastH2) (lastH2.children || (lastH2.children = [])).push(h)
+  headers.forEach((h) => {
+    if (h.level === 2)
+      lastH2 = h
+
+    else if (lastH2)
+      (lastH2.children || (lastH2.children = [])).push(h)
   })
   return headers.filter(h => h.level === 2)
 }
