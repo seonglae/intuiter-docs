@@ -1,7 +1,7 @@
 {
   "name": "intuiter-docs",
   "displayName": "Intuiter",
-  "description": "Intuti Manager",
+  "description": "Make you Productive",
   "homepage": "https://intuiter.vercel.app",
   "version": "1.0.0",
   "engines": {
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev . --port 8888",
+    "dev": "vitepress dev . --port 8000",
     "build": "esno ./scripts/docs.ts"
   },
   "devDependencies": {
