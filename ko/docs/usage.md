@@ -1,4 +1,3 @@
-
 # How to Use
 
 When you run program, you will see this window
