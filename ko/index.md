@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /logo.png
-actionText: Get Started
-actionLink: /en/docs/
+actionText: 시작하기
+actionLink: ./docs/
 
 footer: MIT Licensed | Copyright © 2021-PRESENT Seonglae Cho
 ---
