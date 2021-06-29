@@ -1,61 +1,72 @@
 // @ts-check
 const pkg = require('../package.json')
 
-const Docs = [
-  {
-    text: 'Intuiter',
-    link: '/docs/',
-  },
-  {
-    text: 'Install',
-    link: '/docs/install',
-  },
-  {
-    text: 'Usage',
-    link: '/docs/usage',
-  },
-]
+function site(lang) {
+  const Docs = [
+    {
+      text: 'Intuiter',
+      link: `/${lang}/docs/`,
+    },
+    {
+      text: 'Install',
+      link: `/${lang}/docs/install`,
+    },
+    {
+      text: 'Usage',
+      link: `/${lang}/docs/usage`,
+    },
+  ]
+  const Usages = [
+    {
+      text: 'Text',
+      link: `/${lang}/usages/text`,
+    },
+    {
+      text: 'Mouse',
+      link: `/${lang}/usages/mouse`,
+    },
+    {
+      text: 'Shortcut',
+      link: `/${lang}/usages/shortcut`,
+    },
+    {
+      text: 'Others',
+      link: `/${lang}/usages/others`,
+    },
+  ]
+  const Versions = [
+    {
+      text: '0.6.0',
+      link: `/${lang}/versions/0-6-0`,
+    },
+    {
+      text: '0.6.1',
+      link: `/${lang}/versions/0-6-1`,
+    },
+  ]
+  const sidebar = [
+    {
+      text: 'Docs',
+      children: Docs,
+    },
+    {
+      text: 'Usage',
+      children: Usages,
+    },
+  ]
+  const nav = [
+    {
+      text: 'Versions',
+      items: Versions,
+    },
+    {
+      text: 'Usages',
+      items: Usages,
+    },
+  ]
 
-const Usages = [
-  {
-    text: 'Text',
-    link: '/usages/text',
-  },
-  {
-    text: 'Mouse',
-    link: '/usages/mouse',
-  },
-  {
-    text: 'Shortcut',
-    link: '/usages/shortcut',
-  },
-  {
-    text: 'Others',
-    link: '/usages/others',
-  },
-]
-
-const Versions = [
-  {
-    text: '0.6.0',
-    link: '/versions/0-6-0',
-  },
-  {
-    text: '0.6.1',
-    link: '/versions/0-6-1',
-  },
-]
-
-const slidebars = [
-  {
-    text: 'Docs',
-    children: Docs,
-  },
-  {
-    text: 'Usage',
-    children: Usages,
-  },
-]
+  return { sidebar, nav }
+}
 
 /**
  * @type {import('vitepress').UserConfig}
@@ -95,16 +106,17 @@ module.exports = {
     docsBranch: 'release',
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
-    nav: [
-      {
-        text: 'Versions',
-        items: Versions,
+    locales: {
+      '/': {
+        label: 'English',
+        lang: 'en-US',
+        ...site('en'),
       },
-      {
-        text: 'Usages',
-        items: Usages,
+      '/ko/': {
+        label: 'Korean',
+        lang: 'ko-KR',
+        ...site('ko'),
       },
-    ],
-    sidebar: slidebars,
+    },
   },
 }

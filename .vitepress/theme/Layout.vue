@@ -2,11 +2,7 @@
   <div class="theme" :class="pageClasses">
     <NavBar
       v-if="showNavbar"
-      :class="
-        isHome
-          ? '!border-transparent !bg-opacity-50 !md:bg-transparent <md:(backdrop-filter backdrop-blur)'
-          : ''
-      "
+      :class="isHome ? '!border-transparent !bg-opacity-50 !md:bg-transparent <md:(backdrop-filter backdrop-blur)' : ''"
       @toggle="toggleSidebar"
     >
       <template #search>
@@ -69,9 +65,7 @@ const siteData = useSiteData<DefaultTheme.Config>()
 const siteRouteData = useSiteDataByRoute()
 const theme = computed(() => siteData.value.themeConfig)
 
-const AlgoliaSearchBox = defineAsyncComponent(
-  () => import('./components/AlgoliaSearchBox.vue')
-)
+const AlgoliaSearchBox = defineAsyncComponent(() => import('./components/AlgoliaSearchBox.vue'))
 
 // custom layout
 const isCustomLayout = computed(() => !!route.data.frontmatter.customLayout)
@@ -84,17 +78,10 @@ const showNavbar = computed(() => {
   const { frontmatter } = route.data
   if (frontmatter.navbar === false || themeConfig.navbar === false) return false
 
-  return (
-    siteData.value.title ||
-    themeConfig.logo ||
-    themeConfig.repo ||
-    themeConfig.nav
-  )
+  return siteData.value.title || themeConfig.logo || themeConfig.repo || themeConfig.nav
 })
 
-const isHome = computed(
-  () => route.path === '/' || route.path === '/index.html'
-)
+const isHome = computed(() => route.path === '/' || route.path === '/index.html')
 
 // sidebar
 const openSideBar = ref(false)
@@ -105,8 +92,7 @@ const showSidebar = computed(() => {
   return (
     !frontmatter.home &&
     frontmatter.sidebar !== false &&
-    ((typeof themeConfig.sidebar === 'object' &&
-      Object.keys(themeConfig.sidebar).length !== 0) ||
+    ((typeof themeConfig.sidebar === 'object' && Object.keys(themeConfig.sidebar).length !== 0) ||
       (Array.isArray(themeConfig.sidebar) && themeConfig.sidebar.length !== 0))
   )
 })
@@ -127,8 +113,8 @@ const pageClasses = computed(() => {
     {
       'no-navbar': !showNavbar.value,
       'sidebar-open': openSideBar.value,
-      'no-sidebar': !showSidebar.value
-    }
+      'no-sidebar': !showSidebar.value,
+    },
   ]
 })
 </script>
