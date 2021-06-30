@@ -3,9 +3,7 @@ const pkg = require('../package.json')
 
 function site(lang) {
   const Docs = [
-    {
-      text: 'Intuiter',
-      link: `/${lang}/docs/`,
+    {text: 'Intuiter',link: `/${lang}/docs/`,
     },
     {
       text: 'Install',
