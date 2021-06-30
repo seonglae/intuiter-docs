@@ -11,10 +11,10 @@ Win key is Meta key in Windows
 
 ### Scroll without mouse
 
-<img src="../assets/images/scroll.gif" alt="Power Delete" width="800"/>
+<img src="/images/scroll.gif" alt="Power Delete" width="800"/>
 
 
 ### Click without mouse
 
-<img src="../assets/images/click.gif" alt="Power Delete" width="800"/>
+<img src="/images/click.gif" alt="Power Delete" width="800"/>
 
