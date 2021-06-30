@@ -34,14 +34,14 @@ If you write a lot by pc, this program will be fit for you
 
 ### Do Power Delete
 
-<img src="../../assets/images/delete.gif" alt="Power Delete" width="800"/>
+<img src="/images/delete.gif" alt="Power Delete" width="800"/>
 
 
 ### Move Text Cursor very fast or Jump
 
-<img src="../../assets/images/move.gif" alt="fast or Jump" width="800"/>
+<img src="/images/move.gif" alt="fast or Jump" width="800"/>
 
 
 ### select text by shortcut
 
-<img src="../../assets/images/select.gif" alt="Power Delete" width="800"/>
+<img src="/images/select.gif" alt="Power Delete" width="800"/>
