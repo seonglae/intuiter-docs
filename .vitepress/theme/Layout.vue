@@ -50,7 +50,7 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, defineAsyncComponent } from 'vue'
-import { useRoute, useSiteData, useSiteDataByRoute } from 'vitepress'
+import { useRoute, useSiteData, useSiteDataByRoute, useRouter } from 'vitepress'
 import type { DefaultTheme } from './config'
 
 // components
@@ -61,9 +61,12 @@ const Home = defineAsyncComponent(() => import('./components/Home.vue'))
 
 // generic state
 const route = useRoute()
+const router = useRouter()
 const siteData = useSiteData<DefaultTheme.Config>()
 const siteRouteData = useSiteDataByRoute()
 const theme = computed(() => siteData.value.themeConfig)
+
+for (const path in theme.value.locales) if (theme.value.locales[path].lang === navigator.language) router.go(path)
 
 const AlgoliaSearchBox = defineAsyncComponent(() => import('./components/AlgoliaSearchBox.vue'))
 
