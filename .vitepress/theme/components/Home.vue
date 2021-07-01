@@ -13,6 +13,15 @@
 import HomeHero from './HomeHero.vue'
 import HomeFeatures from './HomeFeatures.vue'
 import HomeFooter from './HomeFooter.vue'
+import { useRouter, useSiteData } from 'vitepress'
+import { onMounted, computed } from 'vue'
+
+const router = useRouter()
+const siteData = useSiteData<DefaultTheme.Config>()
+const theme = computed(() => siteData.value.themeConfig)
+onMounted(() => {
+  for (const path in theme.value.locales) if (theme.value.locales[path].lang === navigator.language) router.go(path)
+})
 </script>
 
 <style scoped>
