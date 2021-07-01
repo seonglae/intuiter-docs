@@ -49,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, defineAsyncComponent } from 'vue'
+import { ref, computed, watch, defineAsyncComponent, onMounted } from 'vue'
 import { useRoute, useSiteData, useSiteDataByRoute, useRouter } from 'vitepress'
 import type { DefaultTheme } from './config'
 
@@ -66,7 +66,9 @@ const siteData = useSiteData<DefaultTheme.Config>()
 const siteRouteData = useSiteDataByRoute()
 const theme = computed(() => siteData.value.themeConfig)
 
-for (const path in theme.value.locales) if (theme.value.locales[path].lang === navigator.language) router.go(path)
+onMounted(() => {
+  for (const path in theme.value.locales) if (theme.value.locales[path].lang === navigator.language) router.go(path)
+})
 
 const AlgoliaSearchBox = defineAsyncComponent(() => import('./components/AlgoliaSearchBox.vue'))
 
