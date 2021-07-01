@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\.vitepress\\theme"
+		},
+		{
+			"path": "..\\en"
+		},
+		{
+			"path": "..\\ko"
+		}
+	],
+	"settings": {}
+}

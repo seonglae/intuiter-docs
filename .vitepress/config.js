@@ -1,14 +1,12 @@
 // @ts-check
 const pkg = require('../package.json')
 
-/**
- * @type {string}
- */
+/** @type {string} */
 const gfont = 'https://fonts.gstatic.com'
-/**
- * @type {string}
- */
-let gfamily = 'family=IBM+Plex+Mono:wght@200;400;500&family=Inter:wght@200;400;500;600'
+/** @type {string} */
+const gfamily = 'family=IBM+Plex+Mono:wght@200;400;500&family=Inter:wght@200;400;500;600'
+/** @type {string} */
+const gfontapi = 'https://fonts.googleapis.com'
 
 /**
  * @param lang {string}
@@ -60,7 +58,7 @@ module.exports = {
     ['meta', { name: 'twitter:image', content: `${pkg.homepage}/og-image.png` }],
     ['link', { rel: 'dns-prefetch', href: gfont }],
     ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: gfont }],
-    ['link', { href: `${gfont}/css2?${gfamily}`, rel: 'stylesheet' }],
+    ['link', { href: `${gfontapi}/css2?${gfamily}`, rel: 'stylesheet' }],
   ],
   themeConfig: {
     repo: 'seonglae/intuiter-docs',
