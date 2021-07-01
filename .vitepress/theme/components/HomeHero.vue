@@ -3,7 +3,7 @@
     <div class="mx-auto grid lg:grid-cols-12] gap-4">
       <div class="my-auto pb-40 <md:pb-20">
         <h1>{{ $site.title }}</h1>
-        <div class="description">{{ $site.description }}</div>
+        <div class="description">{{ data.description }}</div>
 
         <NavLink
           v-if="hasAction"
@@ -35,17 +35,10 @@ const hasHeroText = computed(() => data.value.heroText !== null)
 const hasTagline = computed(() => data.value.tagline !== null)
 
 const hasAction = computed(() => data.value.actionLink && data.value.actionText)
-const hasAltAction = computed(
-  () => data.value.altActionLink && data.value.altActionText
-)
+const hasAltAction = computed(() => data.value.altActionLink && data.value.altActionText)
 
 const showHero = computed(() => {
-  return (
-    data.value.heroImage ||
-    hasHeroText.value ||
-    hasTagline.value ||
-    hasAction.value
-  )
+  return data.value.heroImage || hasHeroText.value || hasTagline.value || hasAction.value
 })
 </script>
 
