@@ -31,6 +31,7 @@ function site(lang) {
   const sidebar = [
     { text: isKo ? '버전' : 'Docs', children: Docs },
     { text: isKo ? '사용법' : 'Usage', children: Usages },
+    { text: isKo ? '버전' : 'Versions', items: Versions },
   ]
   const nav = [
     { text: isKo ? '버전' : 'Versions', items: Versions },
@@ -66,8 +67,8 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
     locales: {
-      '/en/': { selectText: '🌎', label: 'English', lang: 'en-US', ...site('en') },
-      '/ko/': { selectText: '🌏', label: '한국어', lang: 'ko-KR', ...site('ko') },
+      '/en/': { base: '/en/', selectText: '🌎', label: 'English', lang: 'en-US', ...site('en') },
+      '/ko/': { base: '/kr/', selectText: '🌏', label: '한국어', lang: 'ko-KR', ...site('ko') },
     },
   },
 }
