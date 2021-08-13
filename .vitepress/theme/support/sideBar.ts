@@ -1,10 +1,5 @@
 import type { DefaultTheme } from '../config'
-import {
-  isArray,
-  ensureSlash,
-  ensureStartingSlash,
-  removeExtention
-} from '../utils'
+import { isArray, ensureSlash, ensureStartingSlash, removeExtention } from '../utils'
 
 export function isSideBarConfig(
   sidebar: DefaultTheme.SideBarConfig | DefaultTheme.MultiSideBarConfig
@@ -12,9 +7,7 @@ export function isSideBarConfig(
   return sidebar === false || sidebar === 'auto' || isArray(sidebar)
 }
 
-export function isSideBarGroup(
-  item: DefaultTheme.SideBarItem
-): item is DefaultTheme.SideBarGroup {
+export function isSideBarGroup(item: DefaultTheme.SideBarItem): item is DefaultTheme.SideBarGroup {
   return (item as DefaultTheme.SideBarGroup).children !== undefined
 }
 
@@ -29,6 +22,7 @@ export function getSideBarConfig(
   path = removeExtention(path)
   path = ensureStartingSlash(path).split('/')[1] || '/'
   path = ensureSlash(path)
+  if (!sidebar) return 'auto'
 
   for (const dir of Object.keys(sidebar)) {
     // make sure the multi sidebar key is surrounded by slash too
@@ -44,15 +38,11 @@ export function getSideBarConfig(
  * don't have `link` property and removes `.md` or `.html` extension if a
  * link contains it.
  */
-export function getFlatSideBarLinks(
-  sidebar: DefaultTheme.SideBarItem[]
-): DefaultTheme.SideBarLink[] {
+export function getFlatSideBarLinks(sidebar: DefaultTheme.SideBarItem[]): DefaultTheme.SideBarLink[] {
   return sidebar.reduce<DefaultTheme.SideBarLink[]>((links, item) => {
-    if (item.link)
-      links.push({ text: item.text, link: removeExtention(item.link) })
+    if (item.link) links.push({ text: item.text, link: removeExtention(item.link) })
 
-    if (isSideBarGroup(item))
-      links = [...links, ...getFlatSideBarLinks(item.children)]
+    if (isSideBarGroup(item)) links = [...links, ...getFlatSideBarLinks(item.children)]
 
     return links
   }, [])

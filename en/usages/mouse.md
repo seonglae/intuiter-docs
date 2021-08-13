@@ -2,19 +2,17 @@
 Win key is Meta key in Windows
 - `win` + `ikjl` - mouse control with **accelleration**
 - `Alt` + `uo` - mouse scroll with **acceleration**
+- `Win` + `h;` - mouse scroll with **acceleration**
+- `Win` + `uo` - Mouse left right click
 
 
 <br/>
-<br/>
-
 # Example
 
 ### Scroll without mouse
-
-<img src="/images/scroll.gif" alt="Power Delete" width="800"/>
+![Scroll without mouse](/images/scroll.gif)
 
 
 ### Click without mouse
 
-<img src="/images/click.gif" alt="Power Delete" width="800"/>
-
+![Click without mouse](/images/click.gif)
