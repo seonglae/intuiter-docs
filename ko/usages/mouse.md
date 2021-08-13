@@ -1,20 +1,19 @@
-# Mouse Control
-Win key is Meta key in Windows
-- `win` + `ikjl` - mouse control with **accelleration**
-- `Alt` + `uo` - mouse scroll with **acceleration**
-
+# 마우스 컨트롤
+- `Win` + `ikjl` - **가속도** 기능이 구현된 마우스 이동
+- `Alt` + `uo` - **가속도** 기능이 구현된 마우스 스크롤
+- `Win` + `h;` - **가속도** 기능이 구현된 마우스 스크롤
+- `Win` + `uo` - 마우스 좌우 클릭
 
 <br/>
-<br/>
 
-# Example
+# 사용 예시
 
-### Scroll without mouse
-
-<img src="/images/scroll.gif" alt="Power Delete" width="800"/>
+### 마우스 스크롤
+![마우스 스크롤](/images/scroll.gif)
 
 
-### Click without mouse
 
-<img src="/images/click.gif" alt="Power Delete" width="800"/>
+### 마우스 클릭
+![마우스 클릭](/images/click.gif)
+
 

@@ -1,30 +1,42 @@
-# Text Control
+# Typing Control
 
-
-### Intuiter use **wasd movement** concept in gaming to **text** and **screen** like vim but more better and wider
-
-### Try press ctrl or shift while using upper shortcuts
-
-<p align="center">
-<img src="https://images.pexels.com/photos/2755173/pexels-photo-2755173.jpeg?cs=srgb&dl=wasd-2755173.jpg" alt="wasd" width="250"/>
-</p>
+### Intuiter use **wasd movement** concept in gaming to **text** and **screen** ㄹ
+If you type texts a lot by PC, this feature will definitely help you
 
 If you write a lot by pc, this program will be fit for you
 
-## Best Text Control Features
+![wasd](https://images.pexels.com/photos/2755173/pexels-photo-2755173.jpeg?cs=srgb&dl=wasd-2755173.jpg)
 
-- `Alt` + `ikjl` - power arrow
-- `Alt` + `esdf` - normal arrow
-- `Alt` + `bi` - backspace, delete
-- `Alt` + `a` - select line
-- `Alt` + `w` - select word
 
+## Move feature
+- `Alt` + `ikjl`
+  - `jl` - power horizontal control (per word)
+  - `ik` - vertical control
+- `Alt` + `esdf`
+  - `jl` - precise horizontal control
+  - `ik` - vertical control
+
+If you use this with `ctrl`, acceleration immediate working
+
+With shift, selection is enabled
 
 <br/>
 
-- `ctrl` means `power`
-- `shift` means `speed` with magic key
-- `shift` means `speed` with `Magic key` and Original keybinding with Window Key
+
+## Delete Feature
+- `Alt` + `b` - delete previous word
+- `Alt` + `n` - delete next word
+- `Alt` + `Shift` + `b` - delete previous alphabet
+- `Alt` + `Shift` + `n` - delete next alphabet
+- `Alt` + `Ctrl` + `b` - delete all alphabets before current cursor
+- `Alt` + `Ctrl` + `n` - delete all alphabets after current cursor
+
+  
+<br/>
+
+## Select Feature
+- `Alt` + `w` - Select current word
+- `Alt` + `a` - Select current line
 
 
 <br/>
@@ -34,14 +46,17 @@ If you write a lot by pc, this program will be fit for you
 
 ### Do Power Delete
 
-<img src="/images/delete.gif" alt="Power Delete" width="800"/>
+![delete](/images/delete.gif)
 
 
 ### Move Text Cursor very fast or Jump
 
-<img src="/images/move.gif" alt="fast or Jump" width="800"/>
+![move](/images/move.gif)
+
 
 
 ### select text by shortcut
 
-<img src="/images/select.gif" alt="Power Delete" width="800"/>
+![select](/images/select.gif)
+
+
