@@ -20,10 +20,9 @@ const router = useRouter()
 const siteData = useSiteData<DefaultTheme.Config>()
 const theme = computed(() => siteData.value.themeConfig)
 onMounted(() => {
-  if (localStorage.lang) {
-    if (router.route.path !== '/') localStorage.lang = router.route.path
-    router.go(localStorage.lang)
-  } else
+  if (router.route.path !== '/') localStorage.lang = router.route.path
+  if (localStorage.lang) router.go(localStorage.lang)
+  else
     for (const path in theme.value.locales) if (theme.value.locales[path].lang === navigator.language) router.go(path)
 })
 </script>
