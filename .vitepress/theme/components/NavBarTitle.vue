@@ -16,7 +16,7 @@ const siteData = useSiteData<DefaultTheme.Config>()
 const theme = computed(() => siteData.value.themeConfig)
 const root = ref<string>(siteData.value.base)
 const path = computed(() => router.route.path)
-watch(path, () => (root.value = path.value))
+watch(path, () => (root.value = path.value.slice(0,4)))
 </script>
 
 <style scoped>
