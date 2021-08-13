@@ -4,9 +4,9 @@
 
 <img src="/images/program.png" >
 
-**Make and Run** 버튼을 클릭하면
+시작 버튼을 클릭하면
 
-<img src="/screenshot/complete.png" />
+<img src="/screenshot/complete.gif" />
 
 완료되었다는 말 이후
 

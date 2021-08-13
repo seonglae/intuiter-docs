@@ -1,17 +1,18 @@
-
 # How to Use
 
 When you run program, you will see this window
 
-<p align="center">
-<img src="/images/program.png" width="500"/>
-</p>
+<img src="/images/program.png" >
 
-Just Press **Make and Run** Button
+시작 버튼을 클릭하면
 
-<p align="center">
-<img src="/images/tray.png" width="250"/>
-</p>
+<img src="/screenshot/complete.gif" />
+
+완료되었다는 말 이후
+
+![tray](/images/tray.png)
+
+
 
 If System Icon Appear like this, the program is running
 
