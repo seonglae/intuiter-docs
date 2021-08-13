@@ -1,2 +1,11 @@
-### Global Control
-- `Alt` + `yp` - tab control
+# 부가 기능
+
+## PC 사용 편의기능
+- `Win` + `s` - PC 절전모드 묻기
+- `Win` + `Shift` + `q` - PC 종류 묻기
+- `Win` + `Alt` + `q` - 화면보호기 바로 활성화 
+- `Win` + `Shift` + `l` - 컴퓨터 잠금
+
+
+## 어플리케이션 편의기능
+- `Alt` + `yp` - `ctrl` + `tab`로 탭을 사용하는 프로그램에서 직관적인 키 배치로 탭 이동가능

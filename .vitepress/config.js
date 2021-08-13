@@ -12,31 +12,27 @@ const gfontapi = 'https://fonts.googleapis.com'
  * @param lang {string}
  */
 function site(lang) {
+  const isKo = lang === 'ko'
   const Docs = [
-    { text: 'Intuiter', link: `/${lang}/docs/` },
-    { text: 'Install', link: `/${lang}/docs/install` },
-    { text: 'Usage', link: `/${lang}/docs/usage` },
+    { text: isKo ? '소개' : 'Introduce', link: `/${lang}/docs/` },
+    { text: isKo ? '설치' : 'Install', link: `/${lang}/docs/install` },
+    { text: isKo ? '사용법' : 'Usage', link: `/${lang}/docs/usage` },
   ]
   const Usages = [
-    { text: 'Text', link: `/${lang}/usages/text` },
-    { text: 'Mouse', link: `/${lang}/usages/mouse` },
+    { text: isKo ? '텍스트 컨트롤' : 'Text Control', link: `/${lang}/usages/text` },
+    { text: isKo ? '마우스 컨트롤' : 'Mouse Control', link: `/${lang}/usages/mouse` },
     {
+      text: isKo ? '앱실행' : 'App Shortcuts',
       link: `/${lang}/usages/shortcut`,
     },
-    { text: 'Others', link: `/${lang}/usages/others` },
+    { text: isKo ? '기타기능' : 'Others', link: `/${lang}/usages/others` },
   ]
-  const Versions = [
-    { text: '0.6.0', link: `/${lang}/versions/0-6-0` },
-    { text: '0.6.1', link: `/${lang}/versions/0-6-1` },
-  ]
+  const Versions = [{ text: '0.7.3', link: `/${lang}/versions/0-7-3` }]
   const sidebar = [
-    { text: 'Docs', children: Docs },
-    { text: 'Usage', children: Usages },
+    { text: isKo ? '시작하기' : 'Get Started', children: Docs },
+    { text: isKo ? '사용법' : 'Usage', children: Usages },
   ]
-  const nav = [
-    { text: 'Versions', items: Versions },
-    { text: 'Usages', items: Usages },
-  ]
+  const nav = [{ text: isKo ? '버전' : 'Versions', items: Versions }]
 
   return { sidebar, nav }
 }
@@ -67,8 +63,8 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
     locales: {
-      '/': { label: 'English', lang: 'en-US', ...site('en') },
-      '/ko/': { label: 'Korean', lang: 'ko-KR', ...site('ko') },
+      '/en/': { base: '/en/', selectText: '🌎', label: 'English', lang: 'en-US', ...site('en') },
+      '/ko/': { base: '/kr/', selectText: '🌏', label: '한국어', lang: 'ko-KR', ...site('ko') },
     },
   },
 }

@@ -1,20 +1,16 @@
-
 # How to Use
 
 When you run program, you will see this window
 
-<p align="center">
-<img src="/images/program.png" width="500"/>
-</p>
+<img src="/images/program.png" >
 
-Just Press **Make and Run** Button
+Click start button
 
-<p align="center">
-<img src="/images/tray.png" width="250"/>
-</p>
+<img src="/screenshot/complete.gif" />
+
+After complete message, you can close this window
+
+![tray](/images/tray.png)
+
 
 If System Icon Appear like this, the program is running
-
-# Remember
-
-Default Magic Key is `Alt`
