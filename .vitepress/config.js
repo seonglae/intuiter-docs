@@ -66,8 +66,8 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
     locales: {
-      '/': { label: 'English', lang: 'en-US', ...site('en') },
-      '/ko/': { label: 'Korean', lang: 'ko-KR', ...site('ko') },
+      '/en/': { base: '/', selectText: '🌎', label: 'English', lang: 'en-US', ...site('en') },
+      '/ko/': { selectText: '🌏', label: '한국어', lang: 'ko-KR', ...site('ko') },
     },
   },
 }

@@ -8,14 +8,10 @@
 
 <img src="/screenshot/complete.gif" />
 
-완료되었다는 말 이후
+완료되었다는 메시지 이후에, 프로그램 창으로 닫아도 됩니다
 
 ![tray](/images/tray.png)
 
 
 
-If System Icon Appear like this, the program is running
-
-# Remember
-
-Default Magic Key is `Alt`
+우측 아래 시스템 트레이에서 실행 중인 걸 확인할 수 있습니다
