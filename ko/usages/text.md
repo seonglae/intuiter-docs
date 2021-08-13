@@ -1,47 +1,60 @@
-# Text Control
+# 타이핑 컨트롤
+
+### Intuiter는 화살표 모양 **wasd 이동** 이 키보드에서 굉장히 직관적이라는 철학을 가지고,텍스트와 마우스 등 PC사용 전반적인 컨트롤에 적용합니다
+
+당신이 PC로 많은 내용을 타이핑하고 있다면 이 기능이 아주 도움이 될 것입니다
+
+![wasd](https://images.pexels.com/photos/2755173/pexels-photo-2755173.jpeg?cs=srgb&dl=wasd-2755173.jpg)
 
 
-### Intuiter use **wasd movement** concept in gaming to **text** and **screen** like vim but more better and wider
+## 이동 기능
+- `Alt` + `ikjl`
+  - `jl` - 단어별 좌우 이동
+  - `ik` - 위아래 이동
+- `Alt` + `esdf`
+  - `jl` - 정밀 좌우 이동
+  - `ik` - 위아래 이동
 
-### Try press ctrl or shift while using upper shortcuts
+`ctrl`를 같이 누르면 바로 가속 이동합니다
 
-<p align="center">
-<img src="https://images.pexels.com/photos/2755173/pexels-photo-2755173.jpeg?cs=srgb&dl=wasd-2755173.jpg" alt="wasd" width="250"/>
-</p>
+`shift`를 누르면서 이동하면 선택됩니다
 
-If you write a lot by pc, this program will be fit for you
+<br/>
 
-## Best Text Control Features
 
-- `Alt` + `ikjl` - power arrow
-- `Alt` + `esdf` - normal arrow
-- `Alt` + `bi` - backspace, delete
-- `Alt` + `a` - select line
-- `Alt` + `w` - select word
+## 지우기 기능
+- `Alt` + `b` - 앞 단어 지우기
+- `Alt` + `n` - 뒤 단어 지우기
+- `Alt` + `Shift` + `b` - 한글자 앞 지우기
+- `Alt` + `Shift` + `n` - 한글자 뒤 지우기
+- `Alt` + `Ctrl` + `b` - 현재 위치 앞쪽 라인 지우기
+- `Alt` + `Ctrl` + `n` - 현재 위치 뒤쪽 라인 지우기
+
+
+  
+<br/>
+
+
+## 선택 기능
+- `Alt` + `w` - 현재 단어 선택
+- `Alt` + `a` - 현재 라인 선택
 
 
 <br/>
-
-- `ctrl` means `power`
-- `shift` means `speed` with magic key
-- `shift` means `speed` with `Magic key` and Original keybinding with Window Key
-
-
-<br/>
 <br/>
 
-# Examples
+# 사용영상
 
-### Do Power Delete
+### 지우기 기능
 
-<img src="/images/delete.gif" alt="Power Delete" width="800"/>
-
-
-### Move Text Cursor very fast or Jump
-
-<img src="/images/move.gif" alt="fast or Jump" width="800"/>
+![delete](/images/delete.gif)
 
 
-### select text by shortcut
+### 선택 위치 이동
 
-<img src="/images/select.gif" alt="Power Delete" width="800"/>
+![move](/images/move.gif)
+
+
+### 텍스트 선택
+
+![select](/images/select.gif)

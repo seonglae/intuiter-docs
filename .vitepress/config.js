@@ -22,21 +22,17 @@ function site(lang) {
     { text: isKo ? '텍스트 컨트롤' : 'Text Control', link: `/${lang}/usages/text` },
     { text: isKo ? '마우스 컨트롤' : 'Mouse Control', link: `/${lang}/usages/mouse` },
     {
-      text: isKo ? '단축키' : 'Shortcuts',
+      text: isKo ? '앱실행' : 'App Shortcuts',
       link: `/${lang}/usages/shortcut`,
     },
     { text: isKo ? '기타기능' : 'Others', link: `/${lang}/usages/others` },
   ]
   const Versions = [{ text: '0.7.3', link: `/${lang}/versions/0-7-3` }]
   const sidebar = [
-    { text: isKo ? '버전' : 'Docs', children: Docs },
+    { text: isKo ? '시작하기' : 'Get Started', children: Docs },
     { text: isKo ? '사용법' : 'Usage', children: Usages },
-    { text: isKo ? '버전' : 'Versions', items: Versions },
   ]
-  const nav = [
-    { text: isKo ? '버전' : 'Versions', items: Versions },
-    { text: isKo ? '사용법' : 'Usage', items: Usages },
-  ]
+  const nav = [{ text: isKo ? '버전' : 'Versions', items: Versions }]
 
   return { sidebar, nav }
 }
