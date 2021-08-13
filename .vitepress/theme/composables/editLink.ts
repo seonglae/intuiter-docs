@@ -9,21 +9,15 @@ export function useEditLink() {
   const page = usePageData()
 
   const url = computed(() => {
-    const showEditLink = isNullish(page.value.frontmatter.editLink)
+    const showEditLink = isNullish(page.value?.frontmatter?.editLink)
       ? site.value.themeConfig.editLinks
-      : page.value.frontmatter.editLink
+      : page.value?.frontmatter?.editLink
 
-    const {
-      repo,
-      docsDir = '',
-      docsBranch = 'main',
-      docsRepo = repo,
-    } = site.value.themeConfig
+    const { repo, docsDir = '', docsBranch = 'main', docsRepo = repo } = site.value.themeConfig
 
-    const { relativePath } = page.value
+    const relativePath = page.value?.relativePath
 
-    if (!showEditLink || !relativePath || !repo)
-      return null
+    if (!showEditLink || !relativePath || !repo) return null
 
     return createUrl(repo, docsRepo, docsDir, docsBranch, relativePath)
   })
@@ -38,53 +32,28 @@ export function useEditLink() {
   }
 }
 
-function createUrl(
-  repo: string,
-  docsRepo: string,
-  docsDir: string,
-  docsBranch: string,
-  path: string,
-): string {
+function createUrl(repo: string, docsRepo: string, docsDir: string, docsBranch: string, path: string): string {
   return bitbucketRE.test(repo)
     ? createBitbucketUrl(repo, docsRepo, docsDir, docsBranch, path)
     : createGitHubUrl(repo, docsRepo, docsDir, docsBranch, path)
 }
 
-function createGitHubUrl(
-  repo: string,
-  docsRepo: string,
-  docsDir: string,
-  docsBranch: string,
-  path: string,
-): string {
-  const base = isExternal(docsRepo)
-    ? docsRepo
-    : `https://github.com/${docsRepo}`
+function createGitHubUrl(repo: string, docsRepo: string, docsDir: string, docsBranch: string, path: string): string {
+  const base = isExternal(docsRepo) ? docsRepo : `https://github.com/${docsRepo}`
 
   return (
-    `${base.replace(endingSlashRE, '')
-    }/edit`
-    + `/${docsBranch}/${
-      docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''
-    }${path}`
+    `${base.replace(endingSlashRE, '')}/edit` +
+    `/${docsBranch}/${docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''}${path}`
   )
 }
 
-function createBitbucketUrl(
-  repo: string,
-  docsRepo: string,
-  docsDir: string,
-  docsBranch: string,
-  path: string,
-): string {
+function createBitbucketUrl(repo: string, docsRepo: string, docsDir: string, docsBranch: string, path: string): string {
   const base = isExternal(docsRepo) ? docsRepo : repo
 
   return (
-    `${base.replace(endingSlashRE, '')
-    }/src`
-    + `/${docsBranch}/${
+    `${base.replace(endingSlashRE, '')}/src` +
+    `/${docsBranch}/${
       docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''
-    }${path
-    }?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
+    }${path}?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
   )
 }
