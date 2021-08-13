@@ -4,18 +4,13 @@ When you run program, you will see this window
 
 <img src="/images/program.png" >
 
-시작 버튼을 클릭하면
+Click start button
 
 <img src="/screenshot/complete.gif" />
 
-완료되었다는 말 이후
+After complete message, you can close this window
 
 ![tray](/images/tray.png)
 
 
-
 If System Icon Appear like this, the program is running
-
-# Remember
-
-Default Magic Key is `Alt`
