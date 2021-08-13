@@ -12,30 +12,29 @@ const gfontapi = 'https://fonts.googleapis.com'
  * @param lang {string}
  */
 function site(lang) {
+  const isKo = lang === 'ko'
   const Docs = [
-    { text: 'Intuiter', link: `/${lang}/docs/` },
-    { text: 'Install', link: `/${lang}/docs/install` },
-    { text: 'Usage', link: `/${lang}/docs/usage` },
+    { text: isKo ? '소개' : 'Introduce', link: `/${lang}/docs/` },
+    { text: isKo ? '설치' : 'Install', link: `/${lang}/docs/install` },
+    { text: isKo ? '사용법' : 'Usage', link: `/${lang}/docs/usage` },
   ]
   const Usages = [
-    { text: 'Text', link: `/${lang}/usages/text` },
-    { text: 'Mouse', link: `/${lang}/usages/mouse` },
+    { text: isKo ? '텍스트 컨트롤' : 'Text Control', link: `/${lang}/usages/text` },
+    { text: isKo ? '마우스 컨트롤' : 'Mouse Control', link: `/${lang}/usages/mouse` },
     {
+      text: isKo ? '단축키' : 'Shortcuts',
       link: `/${lang}/usages/shortcut`,
     },
-    { text: 'Others', link: `/${lang}/usages/others` },
+    { text: isKo ? '기타기능' : 'Others', link: `/${lang}/usages/others` },
   ]
-  const Versions = [
-    { text: '0.6.0', link: `/${lang}/versions/0-6-0` },
-    { text: '0.6.1', link: `/${lang}/versions/0-6-1` },
-  ]
+  const Versions = [{ text: '0.7.3', link: `/${lang}/versions/0-7-3` }]
   const sidebar = [
-    { text: 'Docs', children: Docs },
-    { text: 'Usage', children: Usages },
+    { text: isKo ? '버전' : 'Docs', children: Docs },
+    { text: isKo ? '사용법' : 'Usage', children: Usages },
   ]
   const nav = [
-    { text: 'Versions', items: Versions },
-    { text: 'Usages', items: Usages },
+    { text: isKo ? '버전' : 'Versions', items: Versions },
+    { text: isKo ? '사용법' : 'Usage', items: Usages },
   ]
 
   return { sidebar, nav }
