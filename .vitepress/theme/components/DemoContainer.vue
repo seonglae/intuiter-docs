@@ -12,7 +12,7 @@ import { onErrorCaptured, ref } from 'vue'
 
 const error = ref(null)
 
-onErrorCaptured((err) => {
+onErrorCaptured(err => {
   error.value = err
 })
 </script>
