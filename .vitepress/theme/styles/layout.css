@@ -260,7 +260,7 @@ form {
   z-index: 2;
   display: none;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .nav-btn {
