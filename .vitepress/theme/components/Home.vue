@@ -31,5 +31,8 @@ onMounted(() => {
 .home {
   @apply overflow-x-hidden;
   padding-top: var(--header-height);
+  height: 100% !important;
+  display: flex;
+  flex-flow: column;
 }
 </style>

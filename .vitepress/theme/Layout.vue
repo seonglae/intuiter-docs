@@ -120,9 +120,7 @@ const pageClasses = computed(() => {
 </script>
 
 <style>
-.home {
-  height: 100vh !important;
-  display: flex;
-  flex-flow: column;
+body, html, #app, .theme {
+  height: 100% !important;
 }
 </style>
