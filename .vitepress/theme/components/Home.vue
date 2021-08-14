@@ -21,9 +21,11 @@ const siteData = useSiteData<DefaultTheme.Config>()
 const theme = computed(() => siteData.value.themeConfig)
 onMounted(() => {
   if (router.route.path !== '/') localStorage.lang = router.route.path
-  if (localStorage.lang) router.go(localStorage.lang)
+  if (localStorage.lang) return router.go(localStorage.lang)
   else
-    for (const path in theme.value.locales) if (theme.value.locales[path].lang === navigator.language) router.go(path)
+    for (const path in theme.value.locales)
+      if (theme.value.locales[path].lang.toLowerCase() === navigator.language.toLowerCase()) return router.go(path)
+  router.go('/en/')
 })
 </script>
 
@@ -31,5 +33,8 @@ onMounted(() => {
 .home {
   @apply overflow-x-hidden;
   padding-top: var(--header-height);
+  height: 100% !important;
+  display: flex;
+  flex-flow: column;
 }
 </style>
