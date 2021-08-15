@@ -10,12 +10,16 @@ If you write a lot by pc, this program will be fit for you
 
 ## Move feature
 - `Alt` + `ikjl`
-  - `jl` - power horizontal control (per word)
-  - `ik` - vertical control
+  - `jl` - Power horizontal control (per word)
+  - `ik` - Vertical control
 - `Alt` + `esdf`
-  - `jl` - precise horizontal control
-  - `ik` - vertical control
-
+  - `jl` - Precise horizontal control
+  - `ik` - Vertical control
+- `Alt` + `h;`
+  - `h;` - Document unit control
+- `Alt` + `'Enter`
+  - `'Enter` - Transparent Enter & Transparent Backenter
+  
 If you use this with `ctrl`, acceleration immediate working
 
 With shift, selection is enabled
