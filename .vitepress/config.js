@@ -27,7 +27,10 @@ function site(lang) {
     },
     { text: isKo ? '기타기능' : 'Others', link: `/${lang}/usages/others` },
   ]
-  const Versions = [{ text: '0.7.3', link: `/${lang}/versions/0-7-3` }]
+  const Versions = [
+    { text: '0.8.0', link: `/${lang}/versions/0-8-0` },
+    { text: '0.7.3', link: `/${lang}/versions/0-7-3` },
+  ]
   const sidebar = [
     { text: isKo ? '시작하기' : 'Get Started', children: Docs },
     { text: isKo ? '사용법' : 'Usage', children: Usages },
