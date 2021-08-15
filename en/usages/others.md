@@ -5,6 +5,7 @@
 - `Win` + `Shift` + `q` - ask to Shutdown Windows
 - `Win` + `Alt` + `q` - Activate screen saver 
 - `Win` + `Shift` + `l` - Lock Windows
+- `F1` in File Explorer - Recycle bin, takes some time to recycle
 
 
 ## App usage features
