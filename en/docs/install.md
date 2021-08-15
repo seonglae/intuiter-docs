@@ -3,8 +3,8 @@
 
 ## [Download](https://github.com/seonglae/intuiter/releases/latest/download/Intuiter.exe)
 
-- Windows Store distribution is planned
-- You can also download from release tab - but smart screen problem will happen
+- I have no money to buy certificate, browser maly warn this program.
+- Just click more button, click `keep`
 
 ![chrome](/screenshot/chrome.png)
 
