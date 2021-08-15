@@ -36,7 +36,6 @@ function site(lang) {
     { text: isKo ? '사용법' : 'Usage', children: Usages },
   ]
   const nav = [{ text: isKo ? '버전' : 'Versions', items: Versions }]
-
   return { sidebar, nav }
 }
 
