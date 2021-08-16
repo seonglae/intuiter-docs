@@ -12,8 +12,8 @@ I have no money to buy program certificate, Several warning will be appear.
 ![chrome](/images/smartscreen.png)
 
 
-## Command Install
-You can install by command if you use `winget`
+## Command Install'
+Or more simply, install by command `winget`
 ```bash
 winget install intuiter
 ```

@@ -12,7 +12,7 @@
 ![chrome](/images/smartscreen.png)
 
 ## 커맨드를 이용한 설치
-`winget`을 이용하여 설치할 수도 있습니다
+더욱 간단하게, `winget`을 이용하여 설치할 수도 있습니다
 ```bash
 winget install intuiter
 ```
