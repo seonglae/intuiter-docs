@@ -22,14 +22,8 @@ import { computed } from 'vue'
 import { useFrontmatter } from 'vitepress'
 
 const data = useFrontmatter()
-
-const hasFeatures = computed(() => {
-  return data.value.features && data.value.features.length > 0
-})
-
-const features = computed(() => {
-  return data.value.features ? data.value.features : []
-})
+const hasFeatures = computed(() => data.value.features && data.value.features.length > 0)
+const features = computed(() => (data.value.features ? data.value.features : []))
 </script>
 
 <style scoped>
