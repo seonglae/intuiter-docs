@@ -22,14 +22,9 @@ export function useEditLink() {
     return createUrl(repo, docsRepo, docsDir, docsBranch, relativePath)
   })
 
-  const text = computed(() => {
-    return site.value.themeConfig.editLinkText || 'Edit this page'
-  })
+  const text = computed(() => site.value.themeConfig.editLinkText || 'Edit this page')
 
-  return {
-    url,
-    text,
-  }
+  return { url, text }
 }
 
 function createUrl(repo: string, docsRepo: string, docsDir: string, docsBranch: string, path: string): string {

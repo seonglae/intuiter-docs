@@ -2,8 +2,7 @@
 # Install
 
 ## [Download](https://github.com/seonglae/intuiter/releases/latest/download/Intuiter.exe)
-
-- I have no money to buy certificate, browser maly warn this program.
+I have no money to buy program certificate, Several warning will be appear.
 - Just click more button, click `keep`
 
 ![chrome](/screenshot/chrome.png)
@@ -13,8 +12,8 @@
 ![chrome](/images/smartscreen.png)
 
 
-## Command Install
-You can install by command if you use `winget`
+## Command Install'
+Or more simply, install by command `winget`
 ```bash
 winget install intuiter
 ```
