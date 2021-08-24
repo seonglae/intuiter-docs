@@ -2,8 +2,7 @@
 # 설치방법
 
 ## [다운로드하기](https://github.com/seonglae/intuiter/releases/latest/download/Intuiter.exe)
-
-- 인증서 살 돈이 없어서, 크롬 경고가 나올 수 있습니다.
+제가 프로그램 인증서 살 돈이 없어서, 몇가지 경고가 나올 수 있습니다.
 - 아래와 같이 계속을 눌러주면 됩니다
 
 ![chrome](/screenshot/chrome.png)
@@ -13,7 +12,7 @@
 ![chrome](/images/smartscreen.png)
 
 ## 커맨드를 이용한 설치
-`winget`을 이용하여 설치할 수도 있습니다
+더욱 간단하게, `winget`을 이용하여 설치할 수도 있습니다
 ```bash
 winget install intuiter
 ```

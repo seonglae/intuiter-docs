@@ -59,7 +59,8 @@ module.exports = {
     ['link', { href: `${gfontapi}/css2?${gfamily}`, rel: 'stylesheet' }],
   ],
   themeConfig: {
-    repo: 'seonglae/intuiter-docs',
+    repo: 'seonglae/intuiter',
+    docsRepo: 'seonglae/intuiter-docs',
     logo: '/logo.png',
     docsBranch: 'release',
     editLinks: true,
