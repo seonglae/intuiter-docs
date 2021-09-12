@@ -1,3 +1,0 @@
-{
-  "routes": [{ "src": "/(.*)/versions/(.*)\\.(.*)\\.(.*)", "dest": "/$1/versions/$2-$3-$4.html" }]
-}
