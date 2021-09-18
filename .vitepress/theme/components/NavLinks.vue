@@ -15,12 +15,12 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useSiteDataByRoute } from 'vitepress'
+import { useData } from 'vitepress'
 import { useLocaleLinks } from '../composables/nav'
 import NavLink from './NavLink.vue'
 import NavDropdownLink from './NavDropdownLink.vue'
 
-const site = useSiteDataByRoute()
+const { site } = useData()
 const localeLinks = useLocaleLinks()
 
 const links = computed(() => site.value.themeConfig.nav)
@@ -29,7 +29,7 @@ const show = computed(() => links.value)
 
 <style scoped>
 .nav-links {
-  padding: .75rem 0;
+  padding: 0.75rem 0;
   border-bottom: 1px solid var(--c-divider);
 }
 

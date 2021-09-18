@@ -31,12 +31,24 @@ function site(lang) {
     { text: '0.8.0', link: `/${lang}/versions/0-8-0` },
     { text: '0.7.3', link: `/${lang}/versions/0-7-3` },
   ]
+  const Languages = [
+    { text: 'English', link: `/en/` },
+    { text: '한국어', link: `/ko/` },
+  ]
   const sidebar = [
     { text: isKo ? '시작하기' : 'Get Started', children: Docs },
     { text: isKo ? '사용법' : 'Usage', children: Usages },
   ]
-  const nav = [{ text: isKo ? '버전' : 'Versions', items: Versions }]
+  const nav = [
+    { text: isKo ? '버전' : 'Versions', items: Versions },
+    { text: '🌎', items: Languages },
+  ]
   return { sidebar, nav }
+}
+
+const locales = {
+  '/en/': { lang: 'en-US', ...site('en') },
+  '/ko/': { lang: 'ko-KR', ...site('ko') },
 }
 
 /**
@@ -65,9 +77,7 @@ module.exports = {
     docsBranch: 'release',
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
-    locales: {
-      '/en/': { base: '/en/', selectText: '🌎', label: 'English', lang: 'en-US', ...site('en') },
-      '/ko/': { base: '/kr/', selectText: '🌏', label: '한국어', lang: 'ko-KR', ...site('ko') },
-    },
+    locales,
   },
+  locales,
 }
