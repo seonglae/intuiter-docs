@@ -1,8 +1,9 @@
 import path from 'path'
 import { run } from './run'
-;(async () => {
-  run('npx vitepress build  --mpa', path.resolve(__dirname, '../'))
-})().catch(e => {
+
+const build = async () => run('npx vitepress build  --mpa', path.resolve(__dirname, '../'))
+
+build().catch(e => {
   console.error(e)
   process.exit(1)
 })
