@@ -1,6 +1,6 @@
 <template>
   <a class="nav-bar-title" :href="root" :aria-label="`${site.title}, back to home`">
-    <img v-if="theme.logo" class="logo" :src="theme.logo" alt="Logo" />
+    <img v-if="withBase(theme.logo)" class="logo" :src="theme.logo" alt="Logo" />
     <span class="title">
       <span class="font-600">{{ site.title }}</span>
     </span>
@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { useRouter, useData } from 'vitepress'
+import { useRouter, useData, withBase } from 'vitepress'
 import { computed, ref, watch } from 'vue'
 
 const router = useRouter()
