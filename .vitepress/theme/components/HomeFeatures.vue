@@ -19,11 +19,11 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useFrontmatter } from 'vitepress'
+import { useData } from 'vitepress'
 
-const data = useFrontmatter()
-const hasFeatures = computed(() => data.value.features && data.value.features.length > 0)
-const features = computed(() => (data.value.features ? data.value.features : []))
+const { frontmatter } = useData()
+const hasFeatures = computed(() => frontmatter.value.features && frontmatter.value.features.length > 0)
+const features = computed(() => (frontmatter.value.features ? frontmatter.value.features : []))
 </script>
 
 <style scoped>

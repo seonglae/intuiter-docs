@@ -13,12 +13,12 @@
 import HomeHero from './HomeHero.vue'
 import HomeFeatures from './HomeFeatures.vue'
 import HomeFooter from './HomeFooter.vue'
-import { useRouter, useSiteData } from 'vitepress'
+import { useRouter, useData } from 'vitepress'
 import { onMounted, computed } from 'vue'
 
 const router = useRouter()
-const siteData = useSiteData<DefaultTheme.Config>()
-const theme = computed(() => siteData.value.themeConfig)
+const { site } = useData()
+const theme = computed(() => site.value.themeConfig)
 onMounted(() => {
   if (router.route.path !== '/') localStorage.lang = router.route.path
   if (localStorage.lang) return router.go(localStorage.lang)
