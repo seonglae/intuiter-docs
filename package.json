@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev . --port 8000 --host 0.0.0.0",
-    "build": "esno ./scripts/docs.ts && cp -r assets/* .vitepress/dist"
+    "build": "esno ./scripts/docs.ts"
   },
   "devDependencies": {
     "@types/node": "^15.0.2",
