@@ -8,11 +8,11 @@ export function useNavLink(item: Ref<DefaultTheme.NavItemWithLink>) {
   const isExternal = isExternalCheck(item.value.link)
 
   const props = computed(() => {
-    const routePath = `/${route.data.relativePath}`
+    const routePath = normalizePath(`/${route.data.relativePath}`)
     let active = false
     if (item.value.activeMatch) active = new RegExp(item.value.activeMatch).test(routePath)
     else {
-      const itemPath = withBase(item.value.link)
+      const itemPath = normalizePath(withBase(item.value.link))
       active = itemPath === '/' ? itemPath === routePath : routePath.startsWith(itemPath)
     }
     return {
@@ -24,4 +24,12 @@ export function useNavLink(item: Ref<DefaultTheme.NavItemWithLink>) {
     }
   })
   return { props, isExternal }
+}
+
+function normalizePath(path: string): string {
+  return path
+    .replace(/#.*$/, '')
+    .replace(/\?.*$/, '')
+    .replace(/\.(html|md)$/, '')
+    .replace(/\/index$/, '/')
 }
