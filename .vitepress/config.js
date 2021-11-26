@@ -28,6 +28,8 @@ function site(lang) {
     { text: isKo ? '기타기능' : 'Others', link: `/${lang}/usages/others` },
   ]
   const Versions = [
+    { text: '0.8.2', link: `/${lang}/versions/0-8-2` },
+    { text: '0.8.1', link: `/${lang}/versions/0-8-1` },
     { text: '0.8.0', link: `/${lang}/versions/0-8-0` },
     { text: '0.7.3', link: `/${lang}/versions/0-7-3` },
   ]
