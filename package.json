@@ -3,7 +3,7 @@
   "displayName": "Intuiter",
   "description": "Make you Productive",
   "homepage": "https://intuiter.vercel.app",
-  "version": "1.0.0",
+  "version": "0.8.2",
   "engines": {
     "node": ">=14.0.0"
   },
