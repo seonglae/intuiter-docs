@@ -26,7 +26,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import { isDark } from '../composables/dark'
 import NavLink from './NavLink.vue'
 
 const { frontmatter, site } = useData()
