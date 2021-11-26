@@ -3,25 +3,25 @@
   "displayName": "Intuiter",
   "description": "Make you Productive",
   "homepage": "https://intuiter.vercel.app",
-  "version": "1.0.0",
+  "version": "0.8.2",
   "engines": {
     "node": ">=14.0.0"
   },
   "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev . --port 8000",
-    "build": "esno ./scripts/docs.ts"
+    "dev": "vitepress dev . --port 8000 --host 0.0.0.0",
+    "build": "esno ./scripts/docs.ts && cp -r assets/* .vitepress/dist"
   },
   "devDependencies": {
     "@types/node": "^15.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.2.4",
-    "vite": "^2.2.4",
+    "vite": "^2.5.0",
     "vite-plugin-components": "^0.9.0",
     "vite-plugin-icons": "^0.5.0",
     "vite-plugin-windicss": "^0.16.0-beta.14",
-    "vue": "^3.0.11"
+    "vue": "^3.2.12"
   },
   "dependencies": {
     "@docsearch/css": "^1.0.0-alpha.22",
@@ -33,7 +33,7 @@
     "esno": "^0.5.0",
     "execa": "^5.0.0",
     "prism-theme-vars": "^0.2.2",
-    "vitepress": "^0.13.2",
+    "vitepress": "^0.18.0",
     "vue-demi": "^0.9.0"
   }
 }

@@ -1,3 +1,1 @@
-# Intuiter Docs
-
-Started from [windipress](https://github.com/seonglae/windipress) which are started from [sli.dev](https://sli.dev)
+# Intuiter Document Repository

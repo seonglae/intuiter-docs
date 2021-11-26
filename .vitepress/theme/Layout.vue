@@ -49,9 +49,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, defineAsyncComponent, onMounted } from 'vue'
-import { useRouter, useRoute, useSiteData, useSiteDataByRoute } from 'vitepress'
-import type { DefaultTheme } from './config'
+import { ref, computed, watch, defineAsyncComponent } from 'vue'
+import { useRoute, useData } from 'vitepress'
 
 // components
 import NavBar from './components/NavBar.vue'
@@ -61,9 +60,8 @@ const Home = defineAsyncComponent(() => import('./components/Home.vue'))
 
 // generic state
 const route = useRoute()
-const siteData = useSiteData<DefaultTheme.Config>()
-const theme = computed(() => siteData.value.themeConfig)
-const siteRouteData = useSiteDataByRoute()
+const { site, theme } = useData()
+const siteData = site.value
 
 const AlgoliaSearchBox = defineAsyncComponent(() => import('./components/AlgoliaSearchBox.vue'))
 
@@ -74,10 +72,10 @@ const enableHome = computed(() => !!route.data?.frontmatter?.home)
 
 // navbar
 const showNavbar = computed(() => {
-  const { themeConfig } = siteRouteData.value
+  const { themeConfig } = site.value
   const frontmatter = route.data?.frontmatter
   if (!frontmatter || frontmatter.navbar === false || themeConfig.navbar === false) return false
-  return siteData.value.title || themeConfig.logo || themeConfig.repo || themeConfig.nav
+  return siteData.title || themeConfig.logo || themeConfig.repo || themeConfig.nav
 })
 
 const isHome = computed(() => route.path === '/' || route.path === '/index.html')
@@ -88,7 +86,7 @@ const openSideBar = ref(false)
 const showSidebar = computed(() => {
   const frontmatter = route.data?.frontmatter
   if (!frontmatter) return false
-  const { themeConfig } = siteRouteData.value
+  const { themeConfig } = site.value
   return (
     !frontmatter.home &&
     frontmatter.sidebar !== false &&
@@ -120,7 +118,10 @@ const pageClasses = computed(() => {
 </script>
 
 <style>
-body, html, #app, .theme {
+body,
+html,
+#app,
+.theme {
   height: 100% !important;
 }
 </style>
