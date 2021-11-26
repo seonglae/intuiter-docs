@@ -14,24 +14,24 @@ const gfontapi = 'https://fonts.googleapis.com'
 function site(lang) {
   const isKo = lang === 'ko'
   const Docs = [
-    { text: isKo ? '소개' : 'Introduce', link: `/${lang}/docs/` },
-    { text: isKo ? '설치' : 'Install', link: `/${lang}/docs/install` },
-    { text: isKo ? '사용법' : 'Usage', link: `/${lang}/docs/usage` },
+    { text: isKo ? '소개' : 'Introduce', link: `/${lang}/docs/index.html` },
+    { text: isKo ? '설치' : 'Install', link: `/${lang}/docs/install.html` },
+    { text: isKo ? '사용법' : 'Usage', link: `/${lang}/docs/usage.html` },
   ]
   const Usages = [
-    { text: isKo ? '텍스트 컨트롤' : 'Text Control', link: `/${lang}/usages/text` },
-    { text: isKo ? '마우스 컨트롤' : 'Mouse Control', link: `/${lang}/usages/mouse` },
+    { text: isKo ? '텍스트 컨트롤' : 'Text Control', link: `/${lang}/usages/text.html` },
+    { text: isKo ? '마우스 컨트롤' : 'Mouse Control', link: `/${lang}/usages/mouse.html` },
     {
       text: isKo ? '앱실행' : 'App Shortcuts',
-      link: `/${lang}/usages/shortcut`,
+      link: `/${lang}/usages/shortcut.html`,
     },
-    { text: isKo ? '기타기능' : 'Others', link: `/${lang}/usages/others` },
+    { text: isKo ? '기타기능' : 'Others', link: `/${lang}/usages/others.html` },
   ]
   const Versions = [
-    { text: '0.8.2', link: `/${lang}/versions/0-8-2` },
-    { text: '0.8.1', link: `/${lang}/versions/0-8-1` },
-    { text: '0.8.0', link: `/${lang}/versions/0-8-0` },
-    { text: '0.7.3', link: `/${lang}/versions/0-7-3` },
+    { text: '0.8.2', link: `/${lang}/versions/0-8-2.html` },
+    { text: '0.8.1', link: `/${lang}/versions/0-8-1.html` },
+    { text: '0.8.0', link: `/${lang}/versions/0-8-0.html` },
+    { text: '0.7.3', link: `/${lang}/versions/0-7-3.html` },
   ]
   const Languages = [
     { text: 'English', link: `/en/` },
