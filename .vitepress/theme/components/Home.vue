@@ -23,8 +23,8 @@ onMounted(() => {
   if (router.route.path !== '/') localStorage.lang = router.route.path
   if (localStorage.lang) return router.go(localStorage.lang)
   else
-    for (const path in theme.value.locales)
-      if (theme.value.locales[path].lang.toLowerCase() === navigator.language.toLowerCase()) return router.go(path)
+    for (const path in theme.value.locale)
+      if (theme.value.locale[path].lang.toLowerCase().includes(navigator.language.toLowerCase())) return router.go(path)
   router.go('/en/')
 })
 </script>
