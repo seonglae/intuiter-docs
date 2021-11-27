@@ -80,6 +80,7 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
     locales,
+    locale: locales,
   },
   locales,
 }
