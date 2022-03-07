@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@docsearch/css': ^1.0.0-alpha.28
+  '@docsearch/css': ^3.0.0
   '@docsearch/js': ^1.0.0-alpha.28
   '@docsearch/react': ^1.0.0-alpha.28
   '@iconify/json': ^1.1.461
@@ -23,7 +23,7 @@ specifiers:
   vue-demi: ^0.12.1
 
 dependencies:
-  '@docsearch/css': 1.0.0-alpha.28
+  '@docsearch/css': 3.0.0
   '@docsearch/js': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
   '@docsearch/react': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
   '@iconify/json': 1.1.461
