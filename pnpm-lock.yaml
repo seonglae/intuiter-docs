@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@docsearch/css': ^3.0.0
-  '@docsearch/js': ^1.0.0-alpha.28
+  '@docsearch/js': ^3.0.0
   '@docsearch/react': ^1.0.0-alpha.28
   '@iconify/json': ^1.1.461
   '@types/node': ^15.0.2
@@ -24,7 +24,7 @@ specifiers:
 
 dependencies:
   '@docsearch/css': 3.0.0
-  '@docsearch/js': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
+  '@docsearch/js': 3.0.0_react-dom@17.0.2+react@17.0.2
   '@docsearch/react': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
   '@iconify/json': 1.1.461
   '@vueuse/core': 4.11.2_vue@3.2.31
@@ -173,16 +173,6 @@ packages:
 
   /@docsearch/css/3.0.0:
     resolution: {integrity: sha512-1kkV7tkAsiuEd0shunYRByKJe3xQDG2q7wYg24SOw1nV9/2lwEd4WrUYRJC/ukGTl2/kHeFxsaUvtiOy0y6fFA==}
-    dev: false
-
-  /@docsearch/js/1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-2g7aPhBy7FoEyeZW2G3LYHWVa8CFvqyozEz8PXt3hyywdFcmEIqmoCRwn8kboVftrOKCjtPcuLCewsaBoB3uiw==}
-    dependencies:
-      '@docsearch/react': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
-      preact: 10.5.13
-    transitivePeerDependencies:
-      - react
-      - react-dom
     dev: false
 
   /@docsearch/js/3.0.0_react-dom@17.0.2+react@17.0.2:
