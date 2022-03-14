@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@docsearch/css': ^3.0.0
   '@docsearch/js': ^1.0.0-alpha.28
-  '@docsearch/react': ^1.0.0-alpha.28
+  '@docsearch/react': ^3.0.0
   '@iconify/json': ^1.1.461
   '@types/node': ^15.0.2
   '@vueuse/core': ^4.11.2
@@ -25,7 +25,7 @@ specifiers:
 dependencies:
   '@docsearch/css': 3.0.0
   '@docsearch/js': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
-  '@docsearch/react': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
+  '@docsearch/react': 3.0.0_react-dom@17.0.2+react@17.0.2
   '@iconify/json': 1.1.461
   '@vueuse/core': 4.11.2_vue@3.2.31
   '@vueuse/sound': 1.1.7_vue@3.2.31

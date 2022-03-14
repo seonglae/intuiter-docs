@@ -26,7 +26,7 @@
   "dependencies": {
     "@docsearch/css": "^3.0.0",
     "@docsearch/js": "^1.0.0-alpha.28",
-    "@docsearch/react": "^1.0.0-alpha.28",
+    "@docsearch/react": "^3.0.0",
     "@iconify/json": "^1.1.461",
     "@vueuse/core": "^4.11.2",
     "@vueuse/sound": "^1.1.7",
