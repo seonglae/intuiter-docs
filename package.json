@@ -5,7 +5,7 @@
   "homepage": "https://intuiter.vercel.app",
   "version": "0.8.2",
   "engines": {
-    "node": ">=v14.19.0"
+    "node": ">=v14.19.1"
   },
   "license": "MIT",
   "scripts": {
@@ -34,6 +34,6 @@
     "execa": "^5.1.1",
     "prism-theme-vars": "^0.2.2",
     "vitepress": "^0.22.3",
-    "vue-demi": "^0.12.1"
+    "vue-demi": "^0.12.4"
   }
 }
