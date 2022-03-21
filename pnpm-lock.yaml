@@ -20,7 +20,7 @@ specifiers:
   vite-plugin-windicss: ^0.17.1
   vitepress: ^0.22.3
   vue: ^3.2.31
-  vue-demi: ^0.12.1
+  vue-demi: ^0.12.4
 
 dependencies:
   '@docsearch/css': 3.0.0
@@ -33,7 +33,7 @@ dependencies:
   execa: 5.1.1
   prism-theme-vars: 0.2.2
   vitepress: 0.22.3_react-dom@17.0.2+react@17.0.2
-  vue-demi: 0.12.1_vue@3.2.31
+  vue-demi: 0.12.4_vue@3.2.31
 
 devDependencies:
   '@types/node': 15.0.2
@@ -358,7 +358,7 @@ packages:
     resolution: {integrity: sha512-4A17XvKXpMR6829EVWvrdSKEeAjTWaiC3+xh51KEtlyCwvWQwZ0xwKDrbMj+e15ANxjHrTw/0bJVaWDfPQt/Pw==}
     dependencies:
       '@vueuse/shared': 4.11.2_vue@3.2.31
-      vue-demi: 0.12.1_vue@3.2.31
+      vue-demi: 0.12.4_vue@3.2.31
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -367,7 +367,7 @@ packages:
   /@vueuse/shared/4.11.2_vue@3.2.31:
     resolution: {integrity: sha512-vTbTi6ou7ljH3CkKVoaIaCAoWB5T1ewSogpL6VnO1duMPNuiv7x8K/LunMbnTg4tVyt6QwaiCuEq/kyS6AUBRg==}
     dependencies:
-      vue-demi: 0.12.1_vue@3.2.31
+      vue-demi: 0.12.4_vue@3.2.31
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -377,7 +377,7 @@ packages:
     resolution: {integrity: sha512-rn4uIeEz9SqZ82KroFQ4OGXRIZ8cLlvfk/CxfZBBkjfRjE1VpanzKYCAoN3dD716dBfLPsAa6Aq7VV6TpZCpVw==}
     dependencies:
       howler: 2.2.1
-      vue-demi: 0.12.1_5bd56b575e8c9bc3d5387dd9b454a418
+      vue-demi: 0.12.4_5bd56b575e8c9bc3d5387dd9b454a418
     optionalDependencies:
       '@vue/composition-api': 1.0.0-rc.12_vue@3.2.31
     transitivePeerDependencies:
@@ -1156,8 +1156,8 @@ packages:
       - stylus
     dev: false
 
-  /vue-demi/0.12.1_5bd56b575e8c9bc3d5387dd9b454a418:
-    resolution: {integrity: sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==}
+  /vue-demi/0.12.4_5bd56b575e8c9bc3d5387dd9b454a418:
+    resolution: {integrity: sha512-ztPDkFt0TSUdoq1ZI6oD730vgztBkiByhUW7L1cOTebiSBqSYfSQgnhYakYigBkyAybqCTH7h44yZuDJf2xILQ==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
@@ -1172,8 +1172,8 @@ packages:
       vue: 3.2.31
     dev: false
 
-  /vue-demi/0.12.1_vue@3.2.31:
-    resolution: {integrity: sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==}
+  /vue-demi/0.12.4_vue@3.2.31:
+    resolution: {integrity: sha512-ztPDkFt0TSUdoq1ZI6oD730vgztBkiByhUW7L1cOTebiSBqSYfSQgnhYakYigBkyAybqCTH7h44yZuDJf2xILQ==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
