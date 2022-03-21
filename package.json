@@ -27,7 +27,7 @@
     "@docsearch/css": "^3.0.0",
     "@docsearch/js": "^3.0.0",
     "@docsearch/react": "^1.0.0-alpha.28",
-    "@iconify/json": "^1.1.461",
+    "@iconify/json": "^2.1.17",
     "@vueuse/core": "^4.11.2",
     "@vueuse/sound": "^1.1.7",
     "esno": "^0.14.1",

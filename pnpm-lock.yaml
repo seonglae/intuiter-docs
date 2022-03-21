@@ -4,7 +4,7 @@ specifiers:
   '@docsearch/css': ^3.0.0
   '@docsearch/js': ^3.0.0
   '@docsearch/react': ^1.0.0-alpha.28
-  '@iconify/json': ^1.1.461
+  '@iconify/json': ^2.1.17
   '@types/node': ^15.0.2
   '@vueuse/core': ^4.11.2
   '@vueuse/sound': ^1.1.7
@@ -26,7 +26,7 @@ dependencies:
   '@docsearch/css': 3.0.0
   '@docsearch/js': 3.0.0_react-dom@17.0.2+react@17.0.2
   '@docsearch/react': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
-  '@iconify/json': 1.1.461
+  '@iconify/json': 2.1.17
   '@vueuse/core': 4.11.2_vue@3.2.31
   '@vueuse/sound': 1.1.7_vue@3.2.31
   esno: 0.14.1
@@ -42,7 +42,7 @@ devDependencies:
   typescript: 4.6.2
   vite: 2.8.6
   vite-plugin-components: 0.13.3_vite@2.8.6
-  vite-plugin-icons: 0.6.5_@iconify+json@1.1.461
+  vite-plugin-icons: 0.6.5_@iconify+json@2.1.17
   vite-plugin-windicss: 0.17.1_vite@2.8.6
   vue: 3.2.31
 
@@ -230,8 +230,15 @@ packages:
     resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
     dev: true
 
-  /@iconify/json/1.1.461:
-    resolution: {integrity: sha512-9Y41Tk9s3LDt4WI20XySNhNX6qTJ/WOBeE3O2iyoV9LJ6gFEDjp0uTPzfRU9NUx7D6VkvQ/htJEuRe9LmyMqUA==}
+  /@iconify/json/2.1.17:
+    resolution: {integrity: sha512-MAEQEXjsUq7swM7CHxNiHMlR7kRDR5fiUPtSJhpxaRJTg/EGfnNfYYAIb91qnEn0ztIcLugtJOheA3u6lvNfHg==}
+    dependencies:
+      '@iconify/types': 1.0.13
+      pathe: 0.0.2
+    dev: false
+
+  /@iconify/types/1.0.13:
+    resolution: {integrity: sha512-jrJJVPnRM1HsMDnuHRTzMfgiSG6Z1U/2IYI7s8spFu9c7n1q3jcXa+3/YQz4tJVNgAhzm1dbnMxfIAyLDpCaWg==}
     dev: false
 
   /@nodelib/fs.scandir/2.1.4:
@@ -377,7 +384,7 @@ packages:
     resolution: {integrity: sha512-rn4uIeEz9SqZ82KroFQ4OGXRIZ8cLlvfk/CxfZBBkjfRjE1VpanzKYCAoN3dD716dBfLPsAa6Aq7VV6TpZCpVw==}
     dependencies:
       howler: 2.2.1
-      vue-demi: 0.12.1_5bd56b575e8c9bc3d5387dd9b454a418
+      vue-demi: 0.12.4_5bd56b575e8c9bc3d5387dd9b454a418
     optionalDependencies:
       '@vue/composition-api': 1.0.0-rc.12_vue@3.2.31
     transitivePeerDependencies:
@@ -911,6 +918,10 @@ packages:
   /path-parse/1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
 
+  /pathe/0.0.2:
+    resolution: {integrity: sha512-mmK20YtPb4yXHlaPuOD/uPIpRu7iIK45GA/GiRSlNpIdfWDG5aEQmFT1HHtBmJB+t/6DvFOtOsEipsPA8Bx2cw==}
+    dev: false
+
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
@@ -1080,7 +1091,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-icons/0.6.5_@iconify+json@1.1.461:
+  /vite-plugin-icons/0.6.5_@iconify+json@2.1.17:
     resolution: {integrity: sha512-lfePr8juO2ajp0571iLL+9zIoyBD9nSSSHlC4JYXbAeMOJB6WTP+Vdc2gze8yI8JRO+Z0TXCCvvL9bPgvkI4Cg==}
     deprecated: renamed to `unplugin-icons`, see https://github.com/antfu/unplugin-icons/releases/tag/v0.7.0
     peerDependencies:
@@ -1093,7 +1104,7 @@ packages:
       vue-template-compiler:
         optional: true
     dependencies:
-      '@iconify/json': 1.1.461
+      '@iconify/json': 2.1.17
       '@iconify/json-tools': 1.0.10
       vue-template-es2015-compiler: 1.9.1
     dev: true
@@ -1156,22 +1167,6 @@ packages:
       - stylus
     dev: false
 
-  /vue-demi/0.12.1_5bd56b575e8c9bc3d5387dd9b454a418:
-    resolution: {integrity: sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==}
-    engines: {node: '>=12'}
-    hasBin: true
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dependencies:
-      '@vue/composition-api': 1.0.0-rc.12_vue@3.2.31
-      vue: 3.2.31
-    dev: false
-
   /vue-demi/0.12.1_vue@3.2.31:
     resolution: {integrity: sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==}
     engines: {node: '>=12'}
@@ -1184,6 +1179,22 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
+      vue: 3.2.31
+    dev: false
+
+  /vue-demi/0.12.4_5bd56b575e8c9bc3d5387dd9b454a418:
+    resolution: {integrity: sha512-ztPDkFt0TSUdoq1ZI6oD730vgztBkiByhUW7L1cOTebiSBqSYfSQgnhYakYigBkyAybqCTH7h44yZuDJf2xILQ==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      '@vue/composition-api': 1.0.0-rc.12_vue@3.2.31
       vue: 3.2.31
     dev: false
 
