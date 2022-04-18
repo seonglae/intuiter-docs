@@ -11,8 +11,8 @@ specifiers:
   esno: ^0.14.1
   execa: ^5.1.1
   prism-theme-vars: ^0.2.2
-  react: ^17.0.2
-  react-dom: ^17.0.2
+  react: ^18.0.0
+  react-dom: ^18.0.0
   typescript: ^4.6.3
   vite: ^2.9.1
   vite-plugin-components: ^0.13.3
@@ -24,21 +24,21 @@ specifiers:
 
 dependencies:
   '@docsearch/css': 3.0.0
-  '@docsearch/js': 3.0.0_react-dom@17.0.2+react@17.0.2
-  '@docsearch/react': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
+  '@docsearch/js': 3.0.0_react-dom@18.0.0+react@18.0.0
+  '@docsearch/react': 1.0.0-alpha.28_react-dom@18.0.0+react@18.0.0
   '@iconify/json': 1.1.461
   '@vueuse/core': 8.2.5_vue@3.2.31
   '@vueuse/sound': 1.1.7_vue@3.2.31
   esno: 0.14.1
   execa: 5.1.1
   prism-theme-vars: 0.2.2
-  vitepress: 0.22.3_react-dom@17.0.2+react@17.0.2
+  vitepress: 0.22.3_react-dom@18.0.0+react@18.0.0
   vue-demi: 0.12.5_vue@3.2.31
 
 devDependencies:
   '@types/node': 15.0.2
-  react: 17.0.2
-  react-dom: 17.0.2_react@17.0.2
+  react: 18.0.0
+  react-dom: 18.0.0_react@18.0.0
   typescript: 4.6.3
   vite: 2.9.1
   vite-plugin-components: 0.13.3_vite@2.9.1
@@ -175,10 +175,10 @@ packages:
     resolution: {integrity: sha512-1kkV7tkAsiuEd0shunYRByKJe3xQDG2q7wYg24SOw1nV9/2lwEd4WrUYRJC/ukGTl2/kHeFxsaUvtiOy0y6fFA==}
     dev: false
 
-  /@docsearch/js/3.0.0_react-dom@17.0.2+react@17.0.2:
+  /@docsearch/js/3.0.0_react-dom@18.0.0+react@18.0.0:
     resolution: {integrity: sha512-j3tUJWlgW3slYqzGB8fm7y05kh2qqrIK1dZOXHeMUm/5gdKE85fiz/ltfCPMDFb/MXF+bLZChJXSMzqY0Ck30Q==}
     dependencies:
-      '@docsearch/react': 3.0.0_react-dom@17.0.2+react@17.0.2
+      '@docsearch/react': 3.0.0_react-dom@18.0.0+react@18.0.0
       preact: 10.5.13
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -187,7 +187,7 @@ packages:
       - react-dom
     dev: false
 
-  /@docsearch/react/1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2:
+  /@docsearch/react/1.0.0-alpha.28_react-dom@18.0.0+react@18.0.0:
     resolution: {integrity: sha512-XjJOnCBXn+UZmtuDmgzlVIHnnvh6yHVwG4aFq8AXN6xJEIX3f180FvGaowFWAxgdtHplJxFGux0Xx4piHqBzIw==}
     peerDependencies:
       react: ^16.8.0
@@ -197,11 +197,11 @@ packages:
       '@francoischalifour/autocomplete-core': 1.0.0-alpha.28
       '@francoischalifour/autocomplete-preset-algolia': 1.0.0-alpha.28
       algoliasearch: 4.9.1
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
     dev: false
 
-  /@docsearch/react/3.0.0_react-dom@17.0.2+react@17.0.2:
+  /@docsearch/react/3.0.0_react-dom@18.0.0+react@18.0.0:
     resolution: {integrity: sha512-yhMacqS6TVQYoBh/o603zszIb5Bl8MIXuOc6Vy617I74pirisDzzcNh0NEaYQt50fVVR3khUbeEhUEWEWipESg==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 18.0.0'
@@ -212,8 +212,8 @@ packages:
       '@algolia/autocomplete-preset-algolia': 1.5.2_algoliasearch@4.9.1
       '@docsearch/css': 3.0.0
       algoliasearch: 4.9.1
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
     transitivePeerDependencies:
       - '@algolia/client-search'
     dev: false
@@ -1110,11 +1110,6 @@ packages:
       path-key: 3.1.1
     dev: false
 
-  /object-assign/4.1.1:
-    resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /onetime/5.1.2:
     resolution: {integrity: sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==}
     engines: {node: '>=6'}
@@ -1163,23 +1158,21 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
-  /react-dom/17.0.2_react@17.0.2:
-    resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
+  /react-dom/18.0.0_react@18.0.0:
+    resolution: {integrity: sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw==}
     peerDependencies:
-      react: 17.0.2
+      react: ^18.0.0
     dependencies:
       loose-envify: 1.4.0
-      object-assign: 4.1.1
-      react: 17.0.2
-      scheduler: 0.20.2
+      react: 18.0.0
+      scheduler: 0.21.0
     dev: true
 
-  /react/17.0.2:
-    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
+  /react/18.0.0:
+    resolution: {integrity: sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-      object-assign: 4.1.1
     dev: true
 
   /resolve/1.22.0:
@@ -1208,11 +1201,10 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /scheduler/0.20.2:
-    resolution: {integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==}
+  /scheduler/0.21.0:
+    resolution: {integrity: sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==}
     dependencies:
       loose-envify: 1.4.0
-      object-assign: 4.1.1
     dev: true
 
   /semver/7.3.5:
@@ -1347,13 +1339,13 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vitepress/0.22.3_react-dom@17.0.2+react@17.0.2:
+  /vitepress/0.22.3_react-dom@18.0.0+react@18.0.0:
     resolution: {integrity: sha512-Yfvu/rent2vp/TXIDZMutS6ft2TJPn4xngS48PYFWDEbuFI2ccUAXM481lF1qVVnCKxfh4g8e/KPvevSJdg1Bw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.0.0
-      '@docsearch/js': 3.0.0_react-dom@17.0.2+react@17.0.2
+      '@docsearch/js': 3.0.0_react-dom@18.0.0+react@18.0.0
       '@vitejs/plugin-vue': 2.2.2_vite@2.9.1+vue@3.2.31
       prismjs: 1.27.0
       vite: 2.9.1
