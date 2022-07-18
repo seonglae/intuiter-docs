@@ -20,7 +20,7 @@
     "vite": "^2.9.14",
     "vite-plugin-components": "^0.13.3",
     "vite-plugin-icons": "^0.6.5",
-    "vite-plugin-windicss": "^1.8.6",
+    "vite-plugin-windicss": "^1.8.7",
     "vue": "^3.2.37"
   },
   "dependencies": {
@@ -28,12 +28,12 @@
     "@docsearch/js": "^3.1.1",
     "@docsearch/react": "^1.0.0-alpha.28",
     "@iconify/json": "^1.1.461",
-    "@vueuse/core": "^8.9.1",
+    "@vueuse/core": "^8.9.4",
     "@vueuse/sound": "^1.1.7",
     "esno": "^0.16.3",
     "execa": "^5.1.1",
-    "prism-theme-vars": "^0.2.3",
+    "prism-theme-vars": "^0.2.4",
     "vitepress": "^0.22.4",
-    "vue-demi": "^0.13.2"
+    "vue-demi": "^0.13.5"
   }
 }
