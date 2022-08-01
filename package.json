@@ -28,7 +28,7 @@
     "@docsearch/js": "^3.1.1",
     "@docsearch/react": "^1.0.0-alpha.28",
     "@iconify/json": "^1.1.461",
-    "@vueuse/core": "^8.9.4",
+    "@vueuse/core": "^9.0.2",
     "@vueuse/sound": "^1.1.7",
     "esno": "^0.16.3",
     "execa": "^5.1.1",
