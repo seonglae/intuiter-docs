@@ -20,7 +20,7 @@ specifiers:
   vite-plugin-windicss: ^1.8.7
   vitepress: ^0.22.4
   vue: ^3.2.37
-  vue-demi: ^0.13.5
+  vue-demi: ^0.13.6
 
 dependencies:
   '@docsearch/css': 3.1.1
@@ -33,7 +33,7 @@ dependencies:
   execa: 5.1.1
   prism-theme-vars: 0.2.4
   vitepress: 0.22.4_react-dom@17.0.2+react@17.0.2
-  vue-demi: 0.13.5_vue@3.2.37
+  vue-demi: 0.13.6_vue@3.2.37
 
 devDependencies:
   '@types/node': 15.0.2
@@ -405,7 +405,7 @@ packages:
       '@vueuse/metadata': 8.9.4
       '@vueuse/shared': 8.9.4_vue@3.2.37
       vue: 3.2.37
-      vue-demi: 0.13.5_vue@3.2.37
+      vue-demi: 0.13.6_vue@3.2.37
     dev: false
 
   /@vueuse/metadata/8.9.4:
@@ -424,14 +424,14 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.37
-      vue-demi: 0.13.5_vue@3.2.37
+      vue-demi: 0.13.6_vue@3.2.37
     dev: false
 
   /@vueuse/sound/1.1.7_vue@3.2.37:
     resolution: {integrity: sha512-rn4uIeEz9SqZ82KroFQ4OGXRIZ8cLlvfk/CxfZBBkjfRjE1VpanzKYCAoN3dD716dBfLPsAa6Aq7VV6TpZCpVw==}
     dependencies:
       howler: 2.2.1
-      vue-demi: 0.13.5_b7bd491f833dc6ba8093b8114b788a1e
+      vue-demi: 0.13.6_b7bd491f833dc6ba8093b8114b788a1e
     optionalDependencies:
       '@vue/composition-api': 1.0.0-rc.12_vue@3.2.37
     transitivePeerDependencies:
@@ -1193,8 +1193,8 @@ packages:
       - stylus
     dev: false
 
-  /vue-demi/0.13.5_b7bd491f833dc6ba8093b8114b788a1e:
-    resolution: {integrity: sha512-tO3K2bML3AwiHmVHeKCq6HLef2st4zBXIV5aEkoJl6HZ+gJWxWv2O8wLH8qrA3SX3lDoTDHNghLX1xZg83MXvw==}
+  /vue-demi/0.13.6_b7bd491f833dc6ba8093b8114b788a1e:
+    resolution: {integrity: sha512-02NYpxgyGE2kKGegRPYlNQSL1UWfA/+JqvzhGCOYjhfbLWXU5QQX0+9pAm/R2sCOPKr5NBxVIab7fvFU0B1RxQ==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
@@ -1209,8 +1209,8 @@ packages:
       vue: 3.2.37
     dev: false
 
-  /vue-demi/0.13.5_vue@3.2.37:
-    resolution: {integrity: sha512-tO3K2bML3AwiHmVHeKCq6HLef2st4zBXIV5aEkoJl6HZ+gJWxWv2O8wLH8qrA3SX3lDoTDHNghLX1xZg83MXvw==}
+  /vue-demi/0.13.6_vue@3.2.37:
+    resolution: {integrity: sha512-02NYpxgyGE2kKGegRPYlNQSL1UWfA/+JqvzhGCOYjhfbLWXU5QQX0+9pAm/R2sCOPKr5NBxVIab7fvFU0B1RxQ==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
