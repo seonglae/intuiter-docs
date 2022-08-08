@@ -1,8 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@docsearch/css': ^3.1.1
-  '@docsearch/js': ^3.1.1
+  '@docsearch/css': ^3.2.0
+  '@docsearch/js': ^3.2.0
   '@docsearch/react': ^1.0.0-alpha.28
   '@iconify/json': ^1.1.461
   '@types/node': ^15.0.2
@@ -23,8 +23,8 @@ specifiers:
   vue-demi: ^0.13.6
 
 dependencies:
-  '@docsearch/css': 3.1.1
-  '@docsearch/js': 3.1.1_react-dom@17.0.2+react@17.0.2
+  '@docsearch/css': 3.2.0
+  '@docsearch/js': 3.2.0_react-dom@17.0.2+react@17.0.2
   '@docsearch/react': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
   '@iconify/json': 1.1.461
   '@vueuse/core': 8.9.4_vue@3.2.37
@@ -184,14 +184,14 @@ packages:
     resolution: {integrity: sha512-1AhRzVdAkrWwhaxTX6/R7SnFHz8yLz1W8I/AldlTrfbNvZs9INk1FZiEFTJdgHaP68nhgQNWSGlQiDiI3y2RYg==}
     dev: false
 
-  /@docsearch/css/3.1.1:
-    resolution: {integrity: sha512-utLgg7E1agqQeqCJn05DWC7XXMk4tMUUnL7MZupcknRu2OzGN13qwey2qA/0NAKkVBGugiWtON0+rlU0QIPojg==}
+  /@docsearch/css/3.2.0:
+    resolution: {integrity: sha512-jnNrO2JVYYhj2pP2FomlHIy6220n6mrLn2t9v2/qc+rM7M/fbIcKMgk9ky4RN+L/maUEmteckzg6/PIYoAAXJg==}
     dev: false
 
-  /@docsearch/js/3.1.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-bt7l2aKRoSnLUuX+s4LVQ1a7AF2c9myiZNv5uvQCePG5tpvVGpwrnMwqVXOUJn9q6FwVVhOrQMO/t+QmnnAEUw==}
+  /@docsearch/js/3.2.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-FEgXW8a+ZKBjSDteFPsKQ7Hlzk6+18A2Y7NffjV+VTsE7P3uTvHPKHKDCeYMnAgXTatRCGHWCfP7YImTSwEFQA==}
     dependencies:
-      '@docsearch/react': 3.1.1_react-dom@17.0.2+react@17.0.2
+      '@docsearch/react': 3.2.0_react-dom@17.0.2+react@17.0.2
       preact: 10.5.13
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -214,8 +214,8 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@docsearch/react/3.1.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-cfoql4qvtsVRqBMYxhlGNpvyy/KlCoPqjIsJSZYqYf9AplZncKjLBTcwBu6RXFMVCe30cIFljniI4OjqAU67pQ==}
+  /@docsearch/react/3.2.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-ATS3w5JBgQGQF0kHn5iOAPfnCCaoLouZQMmI7oENV//QMFrYbjhUZxBU9lIwAT7Rzybud+Jtb4nG5IEjBk3Ixw==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
       react: '>= 16.8.0 < 19.0.0'
@@ -223,7 +223,7 @@ packages:
     dependencies:
       '@algolia/autocomplete-core': 1.7.1
       '@algolia/autocomplete-preset-algolia': 1.7.1_algoliasearch@4.9.1
-      '@docsearch/css': 3.1.1
+      '@docsearch/css': 3.2.0
       algoliasearch: 4.9.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -1177,8 +1177,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
-      '@docsearch/css': 3.1.1
-      '@docsearch/js': 3.1.1_react-dom@17.0.2+react@17.0.2
+      '@docsearch/css': 3.2.0
+      '@docsearch/js': 3.2.0_react-dom@17.0.2+react@17.0.2
       '@vitejs/plugin-vue': 2.3.3_vite@2.9.14+vue@3.2.37
       prismjs: 1.27.0
       vite: 2.9.14
