@@ -24,8 +24,8 @@
     "vue": "^3.2.37"
   },
   "dependencies": {
-    "@docsearch/css": "^3.2.0",
-    "@docsearch/js": "^3.2.0",
+    "@docsearch/css": "^3.2.1",
+    "@docsearch/js": "^3.2.1",
     "@docsearch/react": "^1.0.0-alpha.28",
     "@iconify/json": "^1.1.461",
     "@vueuse/core": "^8.9.4",
@@ -34,6 +34,6 @@
     "execa": "^5.1.1",
     "prism-theme-vars": "^0.2.4",
     "vitepress": "^0.22.4",
-    "vue-demi": "^0.13.7"
+    "vue-demi": "^0.13.8"
   }
 }
