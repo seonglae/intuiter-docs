@@ -68,7 +68,7 @@ module.exports = {
     ['meta', { property: 'og:description', content: pkg.description }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:creator', content: '@SeonglaeC' }],
-    ['meta', { name: 'twitter:image', content: `${pkg.homepage}/og-image.png` }],
+    ['meta', { name: 'twitter:image', content: `${pkg.homepage}/program.png` }],
     ['link', { rel: 'dns-prefetch', href: gfont }],
     ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: gfont }],
     ['link', { href: `${gfontapi}/css2?${gfamily}`, rel: 'stylesheet' }],
