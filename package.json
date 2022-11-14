@@ -24,6 +24,7 @@
     "vue": "^3.2.37"
   },
   "dependencies": {
+    "@algolia/client-search": "^4.14.2",
     "@docsearch/css": "^3.2.1",
     "@docsearch/js": "^3.2.1",
     "@docsearch/react": "^1.0.0-alpha.28",

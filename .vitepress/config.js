@@ -62,8 +62,9 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
     ['meta', { name: 'author', content: 'Seonglae Cho' }],
-    ['meta', { property: 'og:title', content: 'Vitepress' }],
-    ['meta', { property: 'og:image', content: `${pkg.homepage}/og-image.png` }],
+    ['meta', { property: 'og:title', content: 'Intuiter' }],
+    ['meta', { property: 'og:image', content: `${pkg.homepage}/program.png` }],
+    ['meta', { property: 'og:video', content: `${pkg.homepage}/button.gif` }],
     ['meta', { property: 'og:description', content: pkg.description }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:creator', content: '@SeonglaeC' }],
