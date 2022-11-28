@@ -5,7 +5,7 @@
   "homepage": "https://intuiter.vercel.app",
   "version": "0.8.2",
   "engines": {
-    "node": ">=v14.20.0"
+    "node": ">=v18.12.1"
   },
   "license": "MIT",
   "scripts": {
@@ -13,7 +13,7 @@
     "build": "esno ./scripts/docs.ts && cp -r assets/* .vitepress/dist"
   },
   "devDependencies": {
-    "@types/node": "^15.0.2",
+    "@types/node": "^18.11.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.7.4",
