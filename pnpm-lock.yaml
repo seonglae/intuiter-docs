@@ -8,7 +8,7 @@ specifiers:
   '@iconify/json': ^1.1.461
   '@types/node': ^15.0.2
   '@vueuse/core': ^8.9.4
-  '@vueuse/sound': ^1.1.7
+  '@vueuse/sound': ^2.0.0
   esno: ^0.16.3
   execa: ^5.1.1
   prism-theme-vars: ^0.2.4
@@ -30,7 +30,7 @@ dependencies:
   '@docsearch/react': 1.0.0-alpha.28_sfoxds7t5ydpegc3knd667wn6m
   '@iconify/json': 1.1.461
   '@vueuse/core': 8.9.4_vue@3.2.45
-  '@vueuse/sound': 1.1.7_vue@3.2.45
+  '@vueuse/sound': 2.0.0_vue@3.2.45
   esno: 0.16.3
   execa: 5.1.1
   prism-theme-vars: 0.2.4
@@ -386,16 +386,6 @@ packages:
       '@vue/compiler-dom': 3.2.45
       '@vue/shared': 3.2.45
 
-  /@vue/composition-api/1.0.0-rc.12_vue@3.2.45:
-    resolution: {integrity: sha512-b5CLnxza4hbCZB1FeOgutYHJI24u6DL8Z1edilAJa3apVgC1PNSgIk1maQOYC9DoEO0V1KK9H6mEdkuPMJJw1g==}
-    requiresBuild: true
-    peerDependencies:
-      vue: '>= 2.5 < 3'
-    dependencies:
-      tslib: 2.3.0
-      vue: 3.2.45
-    dev: false
-
   /@vue/reactivity-transform/3.2.45:
     resolution: {integrity: sha512-BHVmzYAvM7vcU5WmuYqXpwaBHjsS8T63jlKGWVtHxAHIoMIlmaMyurUSEs1Zcg46M4AYT5MtB1U274/2aNzjJQ==}
     dependencies:
@@ -472,15 +462,18 @@ packages:
       vue-demi: 0.13.11_vue@3.2.45
     dev: false
 
-  /@vueuse/sound/1.1.7_vue@3.2.45:
-    resolution: {integrity: sha512-rn4uIeEz9SqZ82KroFQ4OGXRIZ8cLlvfk/CxfZBBkjfRjE1VpanzKYCAoN3dD716dBfLPsAa6Aq7VV6TpZCpVw==}
+  /@vueuse/sound/2.0.0_vue@3.2.45:
+    resolution: {integrity: sha512-apJcBChS2y7B5nJf7muIe6qbLdRFH7iSMcPpi1nwsVPhwZVWh96lnkTVKL/dwdJPxDuYvh4HKDGOxreW4Yix5w==}
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^2.0.0 || >=3.0.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
     dependencies:
-      howler: 2.2.1
-      vue-demi: 0.13.11_lkmy7nu53aioqpy4a5qw32giuy
-    optionalDependencies:
-      '@vue/composition-api': 1.0.0-rc.12_vue@3.2.45
-    transitivePeerDependencies:
-      - vue
+      howler: 2.2.3
+      vue: 3.2.45
+      vue-demi: 0.13.11_vue@3.2.45
     dev: false
 
   /@windicss/config/1.8.8:
@@ -856,8 +849,8 @@ packages:
     dependencies:
       function-bind: 1.1.1
 
-  /howler/2.2.1:
-    resolution: {integrity: sha512-0iIXvuBO/81CcrQ/HSSweYmbT50fT2mIc9XMFb+kxIfk2pW/iKzDbX1n3fZmDXMEIpYvyyfrB+gXwPYSDqUxIQ==}
+  /howler/2.2.3:
+    resolution: {integrity: sha512-QM0FFkw0LRX1PR8pNzJVAY25JhIWvbKMBFM4gqk+QdV+kPXOhleWGCB6AiAF/goGjIHK2e/nIElplvjQwhr0jg==}
     dev: false
 
   /human-signals/2.1.0:
@@ -1118,10 +1111,6 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /tslib/2.3.0:
-    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
-    dev: false
-
   /tsx/3.4.2:
     resolution: {integrity: sha512-Rd1gm2noOUiVynF+VFxo4bVBNbzS6haWKWtlQ0bEfCLLEqm+GG3R98D3Rqk6foQ3NnJk6JAWOx1ragwcAPj4Lg==}
     hasBin: true
@@ -1228,22 +1217,6 @@ packages:
       - react-dom
       - sass
       - stylus
-    dev: false
-
-  /vue-demi/0.13.11_lkmy7nu53aioqpy4a5qw32giuy:
-    resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
-    engines: {node: '>=12'}
-    hasBin: true
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dependencies:
-      '@vue/composition-api': 1.0.0-rc.12_vue@3.2.45
-      vue: 3.2.45
     dev: false
 
   /vue-demi/0.13.11_vue@3.2.45:
