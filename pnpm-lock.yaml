@@ -14,7 +14,7 @@ specifiers:
   prism-theme-vars: ^0.2.4
   react: ^17.0.2
   react-dom: ^17.0.2
-  typescript: ^4.9.3
+  typescript: ^4.9.4
   vite: ^2.9.15
   vite-plugin-components: ^0.13.3
   vite-plugin-icons: ^0.6.5
@@ -41,7 +41,7 @@ devDependencies:
   '@types/node': 15.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  typescript: 4.9.3
+  typescript: 4.9.4
   vite: 2.9.15
   vite-plugin-components: 0.13.3_vite@2.9.15
   vite-plugin-icons: 0.6.5_@iconify+json@1.1.461
@@ -1122,8 +1122,8 @@ packages:
       fsevents: 2.3.2
     dev: false
 
-  /typescript/4.9.3:
-    resolution: {integrity: sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==}
+  /typescript/4.9.4:
+    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
