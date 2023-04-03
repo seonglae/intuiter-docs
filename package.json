@@ -16,7 +16,7 @@
     "@types/node": "^15.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.3",
     "vite": "^2.9.15",
     "vite-plugin-components": "^0.13.3",
     "vite-plugin-icons": "^0.6.5",
@@ -24,7 +24,7 @@
     "vue": "^3.2.47"
   },
   "dependencies": {
-    "@algolia/client-search": "^4.15.0",
+    "@algolia/client-search": "^4.16.0",
     "@docsearch/css": "^3.3.3",
     "@docsearch/js": "^3.3.3",
     "@docsearch/react": "^1.0.0-alpha.28",
