@@ -2,8 +2,6 @@ import { computed } from 'vue-demi'
 import { useData } from 'vitepress'
 import { endingSlashRE, isNullish, isExternal } from '../utils'
 
-const bitbucketRE = /bitbucket.org/
-
 export function useEditLink() {
   const { site, page } = useData()
 
@@ -27,27 +25,9 @@ export function useEditLink() {
 }
 
 function createUrl(repo: string, docsRepo: string, docsDir: string, docsBranch: string, path: string): string {
-  return bitbucketRE.test(repo)
-    ? createBitbucketUrl(repo, docsRepo, docsDir, docsBranch, path)
-    : createGitHubUrl(repo, docsRepo, docsDir, docsBranch, path)
-}
-
-function createGitHubUrl(repo: string, docsRepo: string, docsDir: string, docsBranch: string, path: string): string {
-  const base = isExternal(docsRepo) ? docsRepo : `https://github.com/${docsRepo}`
-
+  const base = isExternal(docsRepo) ? docsRepo : `https://pr.new/${docsRepo}`
   return (
     `${base.replace(endingSlashRE, '')}/edit` +
-    `/${docsBranch}/${docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''}${path}`
-  )
-}
-
-function createBitbucketUrl(repo: string, docsRepo: string, docsDir: string, docsBranch: string, path: string): string {
-  const base = isExternal(docsRepo) ? docsRepo : repo
-
-  return (
-    `${base.replace(endingSlashRE, '')}/src` +
-    `/${docsBranch}/${
-      docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''
-    }${path}?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
+    `/${docsBranch}/${docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''}${path}?initialPath=${encodeURIComponent(path)}`
   )
 }
