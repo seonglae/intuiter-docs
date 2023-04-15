@@ -40,9 +40,9 @@ function site(lang) {
   const sidebar = [
     { text: isKo ? '시작하기' : 'Get Started', children: Docs },
     { text: isKo ? '사용법' : 'Usage', children: Usages },
+    { text: isKo ? '히스토리' : 'History', children: Versions },
   ]
   const nav = [
-    { text: isKo ? '버전' : 'Versions', items: Versions },
     { text: '🌎', items: Languages },
   ]
   return { sidebar, nav }
@@ -77,7 +77,7 @@ module.exports = {
     repo: 'seonglae/intuiter',
     docsRepo: 'seonglae/intuiter-docs',
     logo: '/logo.png',
-    docsBranch: 'release',
+    docsBranch: 'main',
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
     locales,

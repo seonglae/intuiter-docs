@@ -1,7 +1,5 @@
 <template>
   <aside class="sidebar" :class="{ open }">
-    <NavLinks class="nav" />
-
     <slot name="sidebar-top" />
 
     <SideBarLinks />
@@ -11,7 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import NavLinks from './NavLinks.vue'
 import SideBarLinks from './SideBarLinks.vue'
 
 defineProps({
@@ -42,15 +39,5 @@ defineProps({
 
 .sidebar.open {
   transform: translateX(0);
-}
-
-.nav {
-  display: block;
-}
-
-@media (min-width: 720px) {
-  .nav {
-    display: none;
-  }
 }
 </style>
