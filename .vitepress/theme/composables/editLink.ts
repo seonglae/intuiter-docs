@@ -1,6 +1,6 @@
 import { computed } from 'vue-demi'
 import { useData } from 'vitepress'
-import { endingSlashRE, isNullish, isExternal } from '../utils'
+import { endingSlashRE, isNullish, isExternal, extRE } from '../utils'
 
 export function useEditLink() {
   const { site, page } = useData()
@@ -28,6 +28,6 @@ function createUrl(repo: string, docsRepo: string, docsDir: string, docsBranch: 
   const base = isExternal(docsRepo) ? docsRepo : `https://pr.new/${docsRepo}`
   return (
     `${base.replace(endingSlashRE, '')}/edit` +
-    `/${docsBranch}/${docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''}${path}?initialPath=${encodeURIComponent(path)}`
+    `/${docsBranch}/${docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''}${path}?initialPath=${encodeURIComponent(path.replace(extRE, '.html'))}`
   )
 }
