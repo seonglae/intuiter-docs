@@ -1,15 +1,19 @@
 <template>
   <div class="nav-dropdown-link-item">
-    <a class="item" v-bind="linkProps">
+    <a class="item" :class="linkProps.class" :href="href" :target="(linkProps.target as string)" :rel="(linkProps.rel as string)" :aria-label="linkProps['aria-label']" >
       <!-- <span class="arrow" /> -->
       <span class="text md:ml-2">{{ item.text }}</span>
-      <span class="icon"><OutboundLink v-if="isExternal" /></span>
+      <span class="icon">
+        <OutboundLink v-if="isExternal" />
+      </span>
     </a>
   </div>
 </template>
 
 <script setup lang="ts">
-import { toRefs } from 'vue'
+import { toRefs, watch, ref } from 'vue'
+import { useRoute, useData, Route } from 'vitepress'
+
 import type { DefaultTheme } from '../config'
 import { useNavLink } from '../composables/navLink'
 import OutboundLink from './icons/OutboundLink.vue'
@@ -19,8 +23,20 @@ const props = defineProps<{
 }>()
 
 const propsRefs = toRefs(props)
+const { site } = useData()
+const route = useRoute()
 
 const { props: linkProps, isExternal } = useNavLink(propsRefs.item)
+const href = ref(linkProps.value.href)
+dynamicLink(route)
+
+function dynamicLink(route: Route){
+  const current = Object.keys(site.value.langs).find(locale => route.path.includes(locale))
+  console.log(current, route.path.replace(current as string, propsRefs.item.value.link))
+  href.value = route.path.replace(current as string, propsRefs.item.value.link)
+}
+
+watch(route, (route) => dynamicLink(route))
 </script>
 
 <style scoped>
