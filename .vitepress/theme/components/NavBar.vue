@@ -11,12 +11,6 @@
     </div>
 
     <div class="nav-icons">
-      <div class="item mr-2">
-        <a class="nav-btn" href="https://twitter.com/SeonglaeC" target="_blank" aria-label="Twitter">
-          <mdi-twitter />
-        </a>
-      </div>
-
       <div v-if="repo" class="item">
         <a class="nav-btn" :href="repo.link" target="_blank" aria-label="View GitHub Repo">
           <carbon-logo-github />
@@ -66,27 +60,8 @@ defineEmits(['toggle'])
   background-color: var(--c-bg-semi);
 }
 
-@media (min-width: 720px) {
-  .nav-bar {
-    padding: 0.7rem 0.8rem 0.7rem 1.5rem;
-  }
-}
-
 .flex-grow {
   flex-grow: 1;
-}
-
-.nav {
-  display: none;
-}
-
-@media (min-width: 720px) {
-  .nav {
-    display: flex;
-  }
-  .navbar__dark-mode {
-    display: none;
-  }
 }
 
 .nav-icons {

@@ -38,7 +38,6 @@ function toggle() {
 .nav-dropdown-link {
   position: relative;
   height: 36px;
-  overflow: hidden;
   cursor: pointer;
 }
 
@@ -47,11 +46,11 @@ function toggle() {
     height: auto;
     overflow: visible;
   }
+}
 
-  .nav-dropdown-link:hover .dialog {
+.nav-dropdown-link:hover .dialog {
     display: block;
   }
-}
 
 .nav-dropdown-link.open {
   height: auto;
@@ -60,7 +59,7 @@ function toggle() {
 .button {
   display: block;
   border: 0;
-  padding: 0 1.5rem;
+  padding: 0 0;
   width: 100%;
   text-align: left;
   line-height: 36px;
@@ -114,7 +113,6 @@ function toggle() {
   list-style: none;
 }
 
-@media (min-width: 720px) {
   .dialog {
     display: none;
     position: absolute;
@@ -126,5 +124,4 @@ function toggle() {
     background-color: var(--c-bg);
     box-shadow: var(--shadow-3);
   }
-}
 </style>

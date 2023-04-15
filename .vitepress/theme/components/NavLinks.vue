@@ -40,9 +40,5 @@ const show = computed(() => links.value)
     align-items: center;
     border-bottom: 0;
   }
-
-  .item + .item {
-    padding-left: 24px;
-  }
 }
 </style>

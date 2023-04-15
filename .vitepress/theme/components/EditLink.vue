@@ -8,8 +8,6 @@
 
 <script setup lang="ts">
 import { useEditLink } from '../composables/editLink'
-import OutboundLink from './icons/OutboundLink.vue'
-
 const { url, text } = useEditLink()
 </script>
 
