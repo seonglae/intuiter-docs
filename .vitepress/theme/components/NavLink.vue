@@ -1,8 +1,8 @@
 <template>
   <div class="nav-link">
-    <span class="item" v-bind="linkProps">
+    <a class="item" v-bind="linkProps">
       {{ item.text }} <OutboundLink v-if="isExternal" />
-    </span>
+    </a>
   </div>
 </template>
 
