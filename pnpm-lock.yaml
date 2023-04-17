@@ -35,8 +35,8 @@ dependencies:
     specifier: ^0.22.4
     version: 0.22.4(@algolia/client-search@4.17.0)(react-dom@17.0.2)(react@17.0.2)
   vue-demi:
-    specifier: ^0.13.11
-    version: 0.13.11(vue@3.2.47)
+    specifier: ^0.14.0
+    version: 0.14.0(vue@3.2.47)
 
 devDependencies:
   '@types/node':
@@ -463,7 +463,7 @@ packages:
       '@vueuse/metadata': 8.9.4
       '@vueuse/shared': 8.9.4(vue@3.2.47)
       vue: 3.2.47
-      vue-demi: 0.13.11(vue@3.2.47)
+      vue-demi: 0.14.0(vue@3.2.47)
     dev: false
 
   /@vueuse/metadata@8.9.4:
@@ -482,7 +482,7 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.47
-      vue-demi: 0.13.11(vue@3.2.47)
+      vue-demi: 0.14.0(vue@3.2.47)
     dev: false
 
   /@vueuse/sound@2.0.1(vue@3.2.47):
@@ -496,7 +496,7 @@ packages:
     dependencies:
       howler: 2.2.3
       vue: 3.2.47
-      vue-demi: 0.13.11(vue@3.2.47)
+      vue-demi: 0.14.0(vue@3.2.47)
     dev: false
 
   /@windicss/config@1.8.10:
@@ -1253,8 +1253,8 @@ packages:
       - stylus
     dev: false
 
-  /vue-demi@0.13.11(vue@3.2.47):
-    resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
+  /vue-demi@0.14.0(vue@3.2.47):
+    resolution: {integrity: sha512-gt58r2ogsNQeVoQ3EhoUAvUsH9xviydl0dWJj7dabBC/2L4uBId7ujtCwDRD0JhkGsV1i0CtfLAeyYKBht9oWg==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
