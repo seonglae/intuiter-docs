@@ -25,8 +25,8 @@
   },
   "dependencies": {
     "@algolia/client-search": "^4.17.2",
-    "@docsearch/css": "^3.5.0",
-    "@docsearch/js": "^3.5.0",
+    "@docsearch/css": "^3.5.1",
+    "@docsearch/js": "^3.5.1",
     "@docsearch/react": "^1.0.0-alpha.28",
     "@iconify/json": "^1.1.461",
     "@vueuse/core": "^8.9.4",
