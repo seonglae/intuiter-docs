@@ -31,7 +31,7 @@
     "@iconify/json": "^1.1.461",
     "@vueuse/core": "^8.9.4",
     "@vueuse/sound": "^2.0.1",
-    "esno": "^0.16.3",
+    "esno": "^0.17.0",
     "execa": "^5.1.1",
     "prism-theme-vars": "^0.2.4",
     "vitepress": "^0.22.4",
