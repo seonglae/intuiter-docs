@@ -20,7 +20,7 @@
     "vite": "^2.9.16",
     "vite-plugin-components": "^0.13.3",
     "vite-plugin-icons": "^0.6.5",
-    "vite-plugin-windicss": "^1.9.0",
+    "vite-plugin-windicss": "^1.9.1",
     "vue": "^3.3.4"
   },
   "dependencies": {
