@@ -6,7 +6,7 @@
   rangeStrategy: 'bump',
   packageRules: [{ depTypeList: ['peerDependencies'], enabled: false }, {
     "matchPackagePatterns": ["*"],
-	  "automerge": true
+    "automerge": true
   }],
   dependencyDashboardTitle: "deps: renovate dependency dashboard",
   branchPrefix: "deps/",
