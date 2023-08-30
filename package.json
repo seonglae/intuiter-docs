@@ -16,7 +16,7 @@
     "@types/node": "^15.14.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "typescript": "^5.1.6",
+    "typescript": "^5.2.2",
     "vite": "^2.9.16",
     "vite-plugin-components": "^0.13.3",
     "vite-plugin-icons": "^0.6.5",
@@ -35,6 +35,6 @@
     "execa": "^5.1.1",
     "prism-theme-vars": "^0.2.4",
     "vitepress": "^0.22.4",
-    "vue-demi": "^0.14.5"
+    "vue-demi": "^0.14.6"
   }
 }
