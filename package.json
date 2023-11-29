@@ -21,7 +21,7 @@
     "vite-plugin-components": "^0.13.3",
     "vite-plugin-icons": "^0.6.5",
     "vite-plugin-windicss": "^1.9.2",
-    "vue": "^3.3.8"
+    "vue": "^3.3.9"
   },
   "dependencies": {
     "@algolia/client-search": "^4.20.0",
