@@ -3,6 +3,11 @@ export const extRE = /(index)?\.(md|html)$/
 export const endingSlashRE = /\/$/
 export const outboundRE = /^[a-z]+:/i
 
+// vitepress 1 nests headers under their parent; the sidebar groups a flat list
+export function flattenHeaders(headers: any[] = []): { level: number; title: string; slug: string }[] {
+  return headers.flatMap(({ level, title, slug, children }) => [{ level, title, slug }, ...flattenHeaders(children)])
+}
+
 export function isNullish(value: any): value is null | undefined {
   return value === null || value === undefined
 }

@@ -110,3 +110,17 @@ div[class*='language-'] code {
 .highlight-lines .highlighted {
   background-color: var(--prism-line-highlight-background);
 }
+
+/* vitepress 1 highlights with shiki and hands both themes' colors over as variables */
+.vp-code span {
+  color: var(--shiki-light);
+}
+
+html.dark .vp-code span {
+  color: var(--shiki-dark);
+}
+
+div[class*='language-'] > .lang,
+div[class*='language-'] > button.copy {
+  display: none;
+}

@@ -21,6 +21,7 @@
   },
   "include": [
     "./*.ts",
+    "./*.mts",
     "./.vitepress/**/*.ts",
     "./.vitepress/**/*.vue"
   ],

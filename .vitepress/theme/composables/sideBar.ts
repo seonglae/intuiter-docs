@@ -4,6 +4,7 @@ import { useRoute, useData } from 'vitepress'
 import { useActiveSidebarLinks } from '../composables/activeSidebarLink'
 import { getSideBarConfig } from '../support/sideBar'
 import { DefaultTheme } from '../config'
+import { flattenHeaders } from '../utils'
 
 export function useSideBar() {
   const route = useRoute()
@@ -13,7 +14,7 @@ export function useSideBar() {
 
   return computed(() => {
     // at first, we'll check if we can find the sidebar setting in frontmatter.
-    const headers = route.data?.headers
+    const headers = flattenHeaders(route.data?.headers)
     const frontSidebar = route.data?.frontmatter?.sidebar
     const sidebarDepth = route.data?.frontmatter?.sidebarDepth
 

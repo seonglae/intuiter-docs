@@ -80,8 +80,16 @@ module.exports = {
     docsBranch: 'main',
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
-    locales,
     locale: locales,
   },
-  locales,
+  // vitepress 1 keys locales by path segment and merges each one's themeConfig
+  // into the page's site data, which is where the theme reads sidebar and nav
+  locales: {
+    en: { label: 'English', lang: 'en-US', link: '/en/', themeConfig: site('en') },
+    ko: { label: '한국어', lang: 'ko-KR', link: '/ko/', themeConfig: site('ko') },
+  },
+  // the sidebar lists the current page's headings, which vitepress 1 no longer
+  // puts in page data unless asked
+  // vitesse is the palette the prism variables in code.css came from
+  markdown: { headers: true, theme: { light: 'vitesse-light', dark: 'vitesse-dark' } },
 }

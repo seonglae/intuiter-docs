@@ -31,7 +31,9 @@ const href = ref(linkProps.value.href)
 dynamicLink(route)
 
 function dynamicLink(route: Route){
-  const current = Object.keys(site.value.langs).find(locale => route.path.includes(locale))
+  const current = Object.values(site.value.locales)
+    .map(locale => locale.link)
+    .find(link => link && route.path.includes(link))
   console.log(current, route.path.replace(current as string, propsRefs.item.value.link))
   href.value = route.path.replace(current as string, propsRefs.item.value.link)
 }

@@ -1,7 +1,7 @@
 import { FunctionalComponent, h, VNode } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import { DefaultTheme } from '../config'
-import { joinUrl, isActive } from '../utils'
+import { joinUrl, isActive, flattenHeaders } from '../utils'
 
 export interface Header {
   level: number
@@ -19,7 +19,7 @@ export const SideBarLink: FunctionalComponent<{
   const route = useRoute()
   const { site } = useData()
 
-  const headers = route.data.headers
+  const headers = flattenHeaders(route.data.headers)
   const text = props.item.text
   const link = resolveLink(site.value.base, props.item.link)
   const children = (props.item as DefaultTheme.SideBarGroup).children

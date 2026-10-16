@@ -17,11 +17,11 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^5.3.2",
-    "vite": "^2.9.18",
-    "vite-plugin-components": "^0.13.3",
-    "vite-plugin-icons": "^0.6.5",
-    "vite-plugin-windicss": "^1.9.2",
-    "vue": "^3.3.9"
+    "unplugin-icons": "^24.0.0",
+    "unplugin-vue-components": "^32.1.0",
+    "vite": "^5.4.21",
+    "vite-plugin-windicss": "^1.9.4",
+    "vue": "^3.5.44"
   },
   "dependencies": {
     "@algolia/client-search": "^4.20.0",
@@ -29,12 +29,12 @@
     "@docsearch/js": "^3.5.2",
     "@docsearch/react": "^1.0.0-alpha.28",
     "@iconify/json": "^1.1.461",
-    "@vueuse/core": "^8.9.4",
+    "@vueuse/core": "^12.8.2",
     "@vueuse/sound": "^2.0.1",
     "esno": "^4.0.0",
     "execa": "^5.1.1",
     "prism-theme-vars": "^0.2.4",
-    "vitepress": "^0.22.4",
+    "vitepress": "^1.6.4",
     "vue-demi": "^0.14.6"
   }
 }
